@@ -1,11 +1,30 @@
-import React from 'react'
+import icon from "/src/assets/navigator.png";
 
-const Navbar = () => {
+type NavbarProps = {
+  onToggleSideBar: () => void;
+  showSideBar: boolean;
+};
+
+const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
   return (
-    <section>
-      
-    </section>
-  )
-}
+    <nav className="p-7 -mt-2">
+      <div className="grid grid-cols-2 mx-auto max-w-7xl justify-between items-center">
+        <div className="justify-self-start">
+          {" "}
+          {!showSideBar && (
+            <button onClick={onToggleSideBar}>
+              <img src={icon} alt="img" />
+            </button>
+          )}
+        </div>
+        <div className="justify-self-end">
+          <button className="bg-[#1B1EE4] w-62.25 text-white  text-xl px-4 py-3 rounded-3xl  cursor-pointer border border-[#1B1EE4]">
+            LET'S HELP YOU BUILD
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

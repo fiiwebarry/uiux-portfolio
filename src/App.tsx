@@ -1,17 +1,7 @@
-
-
-import './App.css'
-import Footer from './components/genericLayout/footer'
-
+import "./App.css";
 
 function App() {
- 
-
-  return (
-    <>
-     <Footer/>
-    </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
