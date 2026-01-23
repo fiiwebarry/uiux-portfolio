@@ -4,24 +4,34 @@ import { Link } from "react-router-dom";
 
 type SideBarProps = {
   onToggleSideBar: () => void;
+  showSideBar: boolean;
 };
 
-const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
+const Sidebar = ({ onToggleSideBar, showSideBar }: SideBarProps) => {
   return (
-    <aside className="bg-[#1F1F1F] w-65.75">
-      <div className="p-5">
-        <div className="grid grid-flow-col justify-between">
-          <img className="" src={icon} alt="user" />
-          <IoCloseOutline
-            onClick={onToggleSideBar}
-            className="text-white w-8 h-8"
-          />
+    <aside
+      onClick={onToggleSideBar}
+      className="bg-[#1F1F1F] min-h-screen w-65.75"
+    >
+      <div className="fixed p-8">
+        <div className="grid grid-cols-2 gap-16 justify-between">
+          <span>
+            <img className="" src={icon} alt="user" />
+          </span>
+          <div className="grid justify-items-end">
+            <IoCloseOutline
+              onClick={onToggleSideBar}
+              className="text-white w-8 h-8"
+            />
+          </div>
         </div>
+        {}
         <div className="grid gap-8 text-white pt-32">
           <p>HOME</p>
-          <p>ABOUT ME</p>
+          <Link to="/about">
+            <p>ABOUT ME</p>
+          </Link>
           <p>SERVICES</p>
-
           <Link to="/casestudy">
             <p>CASE STUDIES</p>
           </Link>
@@ -32,6 +42,10 @@ const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
           <p>BLOG</p>
         </div>
       </div>
+
+      {/* <div className="fixed p-5">
+      
+      </div> */}
     </aside>
   );
 };

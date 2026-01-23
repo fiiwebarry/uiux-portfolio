@@ -2,31 +2,35 @@ import Footer from "./footer";
 import Navbar from "./navbar";
 import Sidebar from "./sideBar";
 import type { ReactNode } from "react";
-import {useState} from "react";
+import { useState } from "react";
 
 type LayoutProps = {
   children: ReactNode;
 };
-const Layout = ({ children }:LayoutProps) => {
-     const [showSideBar, setShowSideBar]=useState(false);
+const Layout = ({ children }: LayoutProps) => {
+  const [showSideBar, setShowSideBar] = useState(false);
 
-    const toggleSideBar=()=>{
-    setShowSideBar((prev)=>!prev);
-  }
+  const toggleSideBar = () => {
+    setShowSideBar((prev) => !prev);
+  };
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen  ">
       {/* Sidebar */}
-      {showSideBar && <Sidebar onToggleSideBar={toggleSideBar}  />}
-      
-{/* Main content area */}
+      {showSideBar && (
+        <Sidebar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
+      )}
+
+      {/* Main content area */}
       <div className="flex flex-1 flex-col">
         {/* Navbar */}
-        <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
+        <Navbar
+          onToggleSideBar={toggleSideBar}
+          showSideBar={showSideBar}
+          setShowSideBar={setShowSideBar}
+        />
 
         {/* Page content */}
-        <main className="flex-1 p-4">
-          {children}
-        </main>
+        <main className="flex-1 p-4">{children}</main>
 
         {/* Footer */}
         <Footer />
