@@ -2,29 +2,29 @@ import icon from "/src/assets/transform-image.png";
 
 const Contact = () => {
   return (
-    <section className="max-w-7xl mx-auto  py-10">
+    <section className="md:max-w-7xl md:mx-auto p-8 md:p-0  py-10">
       <div className="grid md:grid-cols-2 gap-3 py-10 ">
         <div className="">
-          <h1 className="text-[#1F1F1F] text-5xl w-119.5 ">
+          <h1 className="text-[#1F1F1F] md:text-5xl md:w-119.5 ">
             Consult with a Product Design Expert
           </h1>
-          <p className="text-[#1F2937]  mt-4 text-2xl w-138.75">
+          <p className="text-[#1F2937]  mt-4 text-2xl md:w-138.75">
             Whether you’re building a new product, refining an existing
             experience, or stuck on a design decision, I offer thoughtful,
             user-centered consultation to help you move forward with confidence.
             Every session is focused on clarity, usability, and impact.
           </p>
         </div>
-        <div className="bg-[#FBFBFB]  rounded-2xl">
+        <div className="bg-[#FBFBFB] rounded-2xl">
           <div className="grid p-7 justify-center  mx-auto">
-            <p className="text-3xl">Let’s Build Something Great Together!</p>
+            <p className="md:text-3xl">Let’s Build Something Great Together!</p>
             <p className="  text-[#1F2937] text-center">
               Have a project in mind or just want to connect? I’d love to hear
               from you.
             </p>
           </div>
           <form className="p-7">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="grid grid-flow-row gap-2">
                 <label className="text-[#000000] text-xl">Full Name</label>
                 <input
@@ -71,7 +71,7 @@ const Contact = () => {
       </div>
       <div className="bg-[#121454] mt-4 rounded-3xl">
         <div className="grid md:grid-cols-2">
-          <div className=" p-10">
+          <div className=" md:p-10">
             <p className="font-bold text-4xl text-[#FFFFFF]">
               Ready to Transform Your Digital Experience?
             </p>
@@ -79,14 +79,14 @@ const Contact = () => {
               Share your project details, what you’re building, who it’s for,
               and what you hope to achieve. Let’s bring your ideas to life!
             </p>
-            <div className="mt-10 relative">
+            <div className="mt-10 md:relative">
               <input
-                className="w-131 text-[#6B7280] p-4 rounded-3xl py-5 border border-[#F8F8F8]"
+                className="md:w-131 text-[#6B7280] p-4 rounded-3xl py-5 border border-[#F8F8F8]"
                 type="text"
                 placeholder="ENTER EMAIL"
               />
 
-              <button className="bg-[#1B1EE4] absolute rounded-3xl py-3 px-6 right-14 top-2 text-white">
+              <button className="bg-[#1B1EE4] md:absolute rounded-3xl py-3 px-6 md:right-14 top-2 text-white">
                 SUBMIT
               </button>
             </div>
