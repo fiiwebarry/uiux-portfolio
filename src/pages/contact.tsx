@@ -3,7 +3,7 @@ import icon from "/src/assets/transform-image.png";
 const Contact = () => {
   return (
     <section className="max-w-7xl mx-auto  py-10">
-      <div className="grid grid-cols-2 gap-3 py-10 ">
+      <div className="grid md:grid-cols-2 gap-3 py-10 ">
         <div className="">
           <h1 className="text-[#1F1F1F] text-5xl w-119.5 ">
             Consult with a Product Design Expert
@@ -70,7 +70,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="bg-[#121454] mt-4 rounded-3xl">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
           <div className=" p-10">
             <p className="font-bold text-4xl text-[#FFFFFF]">
               Ready to Transform Your Digital Experience?

@@ -26,7 +26,7 @@ const footer = () => {
           </button>
         </div>
         <hr className="text-[#3D3D3D] w-[70%]" />
-        <div className="grid grid-flow-col gap-4 text-[#FFFFFF]">
+        <div className="grid md:grid-flow-col gap-4 text-[#FFFFFF]">
           <p>HOME</p>
           <p>ABOUT ME</p>
           <p>SERVICES</p>

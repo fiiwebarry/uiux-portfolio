@@ -7,7 +7,7 @@ type NavbarProps = {
 
 const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
   return (
-    <nav className="p-7 -mt-2">
+    <nav className="p-7 hidden md:block -mt-2">
       <div className="grid grid-cols-2 mx-auto max-w-7xl justify-between items-center">
         <div className="justify-self-start">
           {" "}
