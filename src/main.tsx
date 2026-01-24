@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     ),
     children: [
       {
+        path: "/",
+        element: <Contact />,
+      },
+      {
         path: "/contact",
         element: <Contact />,
       },

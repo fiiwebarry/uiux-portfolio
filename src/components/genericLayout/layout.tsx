@@ -16,18 +16,12 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="flex min-h-screen  ">
       {/* Sidebar */}
-      {showSideBar && (
-        <Sidebar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
-      )}
+      {showSideBar && <Sidebar onToggleSideBar={toggleSideBar} />}
 
       {/* Main content area */}
       <div className="flex flex-1 flex-col">
         {/* Navbar */}
-        <Navbar
-          onToggleSideBar={toggleSideBar}
-          showSideBar={showSideBar}
-          setShowSideBar={setShowSideBar}
-        />
+        <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
 
         {/* Page content */}
         <main className="flex-1 p-4">{children}</main>

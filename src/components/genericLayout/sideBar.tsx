@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 type SideBarProps = {
   onToggleSideBar: () => void;
-  showSideBar: boolean;
 };
 
-const Sidebar = ({ onToggleSideBar, showSideBar }: SideBarProps) => {
+const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
   return (
     <aside
       onClick={onToggleSideBar}
