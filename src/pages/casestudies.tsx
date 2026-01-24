@@ -1,5 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
+import { PRODUCT_SCHEMA } from "../utils/constants";
 import icon from "/src/assets/casestudy.png";
+
 const CaseStudy = () => {
   return (
     <section className="">
@@ -22,29 +24,37 @@ const CaseStudy = () => {
       </div>
 
       {/* product */}
-      <div className="grid grid-cols-2 gap-3 max-w-7xl py-10 mx-auto">
-        <div className="grid gap-5">
-          <span className="bg-[#F0F4F9] rounded-3xl">
-            <img src={icon} alt="icon" />
-          </span>
-          <div className="grid grid-flow-col w-max gap-3">
-            <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-2 px-4">
-              UIUX DESIGN
-            </p>
-            <p className="text-[#FF6C63] border border-[#FF6C63] rounded-3xl py-2 px-4">
-              HEALTHCARE
-            </p>
-          </div>
-          <p className="text-[#1F1F1F] text-xl">
-            Creating a telemedicine platform: Enhancing UI for virtual
-            consultations
-          </p>
-        </div>
+      <div className="grid grid-cols-2 gap-9 max-w-7xl py-10 mx-auto">
+        {PRODUCT_SCHEMA.map((r, i) => {
+          return (
+            <div key={i} className="grid gap-5">
+              <span className="bg-[#F0F4F9] rounded-3xl">
+                <img src={r.image} alt="icon" />
+              </span>
+              <div className="grid grid-flow-col items-center w-max gap-3">
+                <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-7">
+                  {r.slug}
+                </p>
+                <p className="text-[#FF6C63] border border-[#FF6C63] rounded-3xl py-3 px-7">
+                  {r.header}
+                </p>
+              </div>
+              <p className="text-[#1F1F1F] mt-4 text-xl">{r.content}</p>
+            </div>
+          );
+        })}
       </div>
 
       {/* ready to transform */}
-      <div className="bg-[#121454]">
+      <div className="bg-[#121454] -mx-6 py-10 ">
         <div className="grid justify-items-center gap-4 py-10">
+          <div className="grid text-[#1B1EE4] grid-flow-col w-max gap-3 bg-[#EBF2FF] rounded-3xl items-center border border-[#EBF2FF] px-5 py-3">
+            <FaArrowRightLong />
+            <p>
+              Join thousands of satisfied customers who've already made the
+              switch.
+            </p>
+          </div>
           <p className="text-[#FFFFFF] text-7xl text-center w-7/12">
             Ready to Transform Your Digital Experience?
           </p>

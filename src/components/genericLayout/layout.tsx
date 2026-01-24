@@ -24,7 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
 
         {/* Page content */}
-        <main className="flex-1 p-4">{children}</main>
+        <main className="flex-1 p-6">{children}</main>
 
         {/* Footer */}
         <Footer />
