@@ -33,3 +33,17 @@ body {
 .font-worksans {
   font-family: var(--font-worksans);
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #1b1ee4;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #e5e7eb;
+}

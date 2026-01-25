@@ -12,8 +12,9 @@ const About = () => {
     <section className="py-10">
       <div className="max-w-7xl mx-auto py-3 ">
         <div className="grid gap-5">
-          <div>
-            <p className="text-[#1F1F1F] text-xl">About me</p>
+          <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
+            <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
+            <p className="text-[#1F1F1F] text-xl">About Me</p>
           </div>
 
           <p className="italic text-[#1B1EE4] text-xl">

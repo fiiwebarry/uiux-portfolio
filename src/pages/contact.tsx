@@ -1,8 +1,15 @@
+import { PROJECT_BUDGET_SCHEMA } from "../utils/constants";
 import icon from "/src/assets/transform-image.png";
+import { useState } from "react";
 
 const Contact = () => {
+  const [projectBudget, setProjectBudget] = useState(0);
   return (
     <section className="md:max-w-7xl md:mx-auto p-8 md:p-0  py-10">
+      <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
+        <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
+        <p className="text-[#1F1F1F] text-xl">Contact</p>
+      </div>
       <div className="grid md:grid-cols-2 gap-3 py-10 ">
         <div className="">
           <h1 className="text-[#1F1F1F] md:text-5xl md:w-119.5 ">
@@ -58,12 +65,25 @@ const Contact = () => {
             <div className="grid grid-flow-row  mt-4 gap-2">
               <label className="text-[#000000] text-xl">Message box</label>
               <textarea
-                className="border  border-[#D1D5DB] p-4 text-[#D1D5DB]  w-full "
+                className="border  rounded-3xl border-[#D1D5DB] p-4 text-[#D1D5DB] h-57.25  w-full "
                 placeholder="Tell me about your project"
               />
             </div>
 
-            <button className="bg-[#1B1EE4]  mt-7 rounded-3xl px-6 py-3 w-full text-white">
+            <div className="mt-6">
+              <label className="text-[#000000] text-xl">Project Budget</label>
+              <input
+                type="range"
+                min={0}
+                max={PROJECT_BUDGET_SCHEMA.length - 1}
+                step={1}
+                value={projectBudget}
+                onChange={(e) => setProjectBudget(Number(e.target.value))}
+                className="w-full appearance-none bg-transparent"
+              />
+            </div>
+
+            <button className="bg-[#1B1EE4] cursor-pointer  mt-7 rounded-3xl px-6 py-3 w-full text-white">
               SEND MESSAGE
             </button>
           </form>

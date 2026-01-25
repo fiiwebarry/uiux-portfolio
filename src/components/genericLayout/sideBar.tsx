@@ -9,11 +9,11 @@ type SideBarProps = {
 const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
   return (
     <aside
-      onClick={onToggleSideBar}
+      //   onClick={onToggleSideBar}
       className="bg-[#1F1F1F] min-h-screen w-65.75"
     >
       <div className="fixed p-8">
-        <div className="grid grid-cols-2 gap-16 justify-between">
+        <div className="grid grid-cols-2 gap-24 justify-between">
           <span>
             <img className="" src={icon} alt="user" />
           </span>
