@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Contact = () => {
   const [projectBudget, setProjectBudget] = useState(0);
+  const [userInput, setUserInput] = useState([name]);
   return (
     <section className="md:max-w-7xl md:mx-auto p-8 md:p-0  py-10">
       <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
