@@ -3,8 +3,28 @@ import icon from "/src/assets/transform-image.png";
 import { useState } from "react";
 
 const Contact = () => {
-  const [projectBudget, setProjectBudget] = useState(0);
-  const [userInput, setUserInput] = useState([name]);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+    project: "0",
+  });
+
+  const handleChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+  const handleSubmitForm = (e: { preventDefault: () => void }) => {
+    if (!formData.fullName.trim()) {
+      alert("enter fullname ");
+    }
+  };
+
   return (
     <section className="md:max-w-7xl md:mx-auto p-8 md:p-0  py-10">
       <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
@@ -31,7 +51,7 @@ const Contact = () => {
               from you.
             </p>
           </div>
-          <form className="p-7">
+          <form onSubmit={handleSubmitForm} className="p-7">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="grid grid-flow-row gap-2">
                 <label className="text-[#000000] text-xl">Full Name</label>
@@ -40,6 +60,9 @@ const Contact = () => {
                   type="text"
                   aria-placeholder="Enter Name"
                   placeholder="Enter Name"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
                 />
               </div>
               <div className="grid grid-flow-row gap-2">
@@ -78,13 +101,16 @@ const Contact = () => {
                 min={0}
                 max={PROJECT_BUDGET_SCHEMA.length - 1}
                 step={1}
-                value={projectBudget}
-                onChange={(e) => setProjectBudget(Number(e.target.value))}
+                value={formData.project}
+                onChange={handleChange}
                 className="w-full appearance-none bg-transparent"
               />
             </div>
 
-            <button className="bg-[#1B1EE4] cursor-pointer  mt-7 rounded-3xl px-6 py-3 w-full text-white">
+            <button
+              type="submit"
+              className="bg-[#1B1EE4] cursor-pointer  mt-7 rounded-3xl px-6 py-3 w-full text-white"
+            >
               SEND MESSAGE
             </button>
           </form>

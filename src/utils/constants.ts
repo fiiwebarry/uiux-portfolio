@@ -26,6 +26,27 @@ export const PROJECT_SCHEMA=[
     { id:7, slug: 'MOBILE APP DESIGN', image:icon,  header:"ENTERTAINMENT",     content:"Enhancing User Engagement: A UX/UI Case Study"},
     { id:8, slug: 'UIUX DESIGN', image:icon,  header:"FINTECH",     content:"Designing an AI agent : Chatbot UX & UI for a personal finance assistant app"},
    { id:9, slug: 'BRANDING', image:icon,  header:"FINTECH",     content:"Designing an AI agent : Chatbot UX & UI for a personal finance assistant app"},
-
-
 ]
+
+export const EXPERIENCE_SCHEMA = [
+  {
+    title: "ShopSmart E-Commerce Platform",
+    role: "UI Designer · Hybrid",
+    date: "June 2022 – February 2023",
+  },
+  {
+    title: "HealthTrack Fitness App",
+    role: "UX Researcher · Remote",
+    date: "March 2023 – December 2023",
+  },
+  {
+    title: "Foodie Delivery Service",
+    role: "Product Designer · On-site",
+    date: "January 2024 – April 2025",
+  },
+  {
+    title: "TravelMate Booking System",
+    role: "Interaction Designer · Contract",
+    date: "August 2021 - May 2022",
+  },
+];
