@@ -20,6 +20,7 @@ const Contact = () => {
     }));
   };
   const handleSubmitForm = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
     if (!formData.fullName.trim()) {
       alert("enter fullname ");
     }
