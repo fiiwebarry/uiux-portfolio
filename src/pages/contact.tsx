@@ -1,5 +1,5 @@
 import { PROJECT_BUDGET_SCHEMA } from "../utils/constants";
-import icon from "/src/assets/transform-image.png";
+
 import { useState } from "react";
 
 type ContactForm = {
