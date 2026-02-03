@@ -10,7 +10,7 @@ const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
   return (
     <aside
       //   onClick={onToggleSideBar}
-      className="bg-[#1F1F1F] min-h-screen w-65.75"
+      className="bg-[#1F1F1F] min-h-screen w-65.75 z-50"
     >
       <div className="fixed p-8">
         <div className="grid grid-cols-2 gap-24 justify-between">
@@ -26,7 +26,9 @@ const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
         </div>
         {}
         <div className="grid gap-8 text-white pt-32">
-          <p>HOME</p>
+          <Link to="/">
+            <p>HOME</p>
+          </Link>
           <Link to="/about">
             <p>ABOUT ME</p>
           </Link>

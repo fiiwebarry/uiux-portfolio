@@ -8,8 +8,19 @@ import Layout from "./components/genericLayout/layout";
 import Contact from "./pages/contact";
 import CaseStudy from "./pages/casestudies";
 import About from "./pages/about";
+import Home from "./pages/home";
+import HomeLayout from "./components/genericLayout/homelayout";
 
 const router = createBrowserRouter([
+  {
+    element: <HomeLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
   {
     element: (
       <>
@@ -19,10 +30,6 @@ const router = createBrowserRouter([
       </>
     ),
     children: [
-      {
-        path: "/",
-        element: <Contact />,
-      },
       {
         path: "/contact",
         element: <Contact />,

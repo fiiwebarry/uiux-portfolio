@@ -13,18 +13,18 @@ const About = () => {
     setShowAnswer(!showAnswer);
   };
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto py-20 ">
+    <section className="md:py-20 md:p-0 p-5">
+      <div className="md:max-w-7xl mx-auto py-20 ">
         <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
           <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
           <p className="text-[#1F1F1F] text-xl">About Me</p>
         </div>
-        <div className="grid grid-flow-col gap-7">
+        <div className="grid md:grid-flow-col gap-7">
           <div className="grid gap-5">
             <p className="italic text-[#1B1EE4] text-xl">
               LET'S START WITH A SMALL RIDDLE
             </p>
-            <h1 className="text-[#1F1F1F] text-6xl w-7/12">
+            <h1 className="text-[#1F1F1F] md:text-6xl md:w-7/12">
               Why do users leave a product even when it looks good?
             </h1>
             {!showAnswer && (
@@ -44,7 +44,7 @@ const About = () => {
                   <span className="text-[#1B1EE4]">clarity </span>is just
                   decoration.
                 </p>
-                <p className=" w-5/12 text-xl">
+                <p className=" md:w-5/12 text-xl">
                   I'm a product designer who designs beyond the surface but
                   focused on how things work, feel, and guide users{" "}
                   <span className="text-[#1B1EE4]">
@@ -68,7 +68,7 @@ const About = () => {
             <p className="ml-10 md:mt-8 text-[#F59E0B] font-bold text-xl">
               LET'S START WITH A SMALL TRUTH.
             </p>
-            <p className="text-[#FFFFFF] font-bold text-[52px] border-l-4 border-[#1B1EE4] md:pl-9 ">
+            <p className="text-[#FFFFFF] font-bold md:text-[52px] border-l-4 border-[#1B1EE4] pl-4 md:pl-9 ">
               I believe great design isn't about making things pretty, it's
               about solving problems elegantly.
             </p>
@@ -126,12 +126,12 @@ const About = () => {
         </div>
       </div>
       {/* product design */}
-      <div className=" md:max-w-7xl mx-auto grid grid-cols-2 py-10">
+      <div className=" md:max-w-7xl md:p-0 p-5 mx-auto grid md:grid-cols-2 gap-2 py-10">
         <div>
           <p className="text-[#6B7280] text-xl">1 /</p>
           <p className="text-[#1F1F1F] text-3xl">Product Design</p>
         </div>
-        <div className="border-l grid gap-5 text-[#1F2937] text-xl border-[#D1D5DB] pl-40">
+        <div className="md:border-l grid gap-5 text-[#1F2937] text-xl border-[#D1D5DB] md:pl-40">
           <p> Every product begins with a moment of uncertainty.</p>
           <p>
             Someone has an idea. A team has a goal. Users have needs they can’t
@@ -162,12 +162,12 @@ const About = () => {
         </div>
       </div>
       {/*UX Strategy*/}
-      <div className=" md:max-w-7xl mx-auto grid grid-cols-2 py-10">
+      <div className=" md:max-w-7xl md:p-0 p-5 mx-auto grid gap-2 md:grid-cols-2 py-10">
         <div>
           <p className="text-[#6B7280] text-xl">2 /</p>
           <p className="text-[#1F1F1F] text-3xl">UX Strategy</p>
         </div>
-        <div className="border-l grid gap-5 text-[#1F2937] text-xl border-[#D1D5DB] pl-40">
+        <div className="md:border-l grid gap-5 text-[#1F2937] text-xl border-[#D1D5DB] md:pl-40">
           <p> Not every product needs a redesign.</p>
           <p>
             Some just need clarity. When a product already exists but isn’t
@@ -203,12 +203,12 @@ const About = () => {
         </div>
       </div>
       {/*Design Systems*/}
-      <div className=" md:max-w-7xl mx-auto grid grid-cols-2 py-10">
+      <div className=" md:max-w-7xl md:p-0 p-5 mx-auto grid md:grid-cols-2 py-10">
         <div>
           <p className="text-[#6B7280] text-xl">3/</p>
           <p className="text-[#1F1F1F] text-3xl">Design Systems</p>
         </div>
-        <div className="border-l grid gap-5 text-[#1F2937] text-xl border-[#D1D5DB] pl-40">
+        <div className="md:border-l grid gap-5 text-[#1F2937] text-xl border-[#D1D5DB] md:pl-40">
           <p>As products grow, design can either scale… or slowly unravel.</p>
           <p>
             What starts as a few screens becomes dozens. Buttons change.
@@ -238,38 +238,38 @@ const About = () => {
         </div>
       </div>
       <div className="bg-[#111827] py-20 md:-mx-6 -mx-5">
-        <div className=" max-w-7xl grid gap-7 justify-items-center mb-20  mx-auto">
+        <div className=" md:max-w-7xl md:p-0 p-5 grid gap-7 justify-items-center mb-20  mx-auto">
           <div>
             <p className="text-[#F59E0B] font-bold text-2xl">MY PHILOSOPHY</p>
           </div>
           <div className=" grid gap-2 relative md:w-8/12 text-center">
-            <p className="text-[#FFFFFF] italic font-bold text-2xl">
+            <p className="text-[#FFFFFF] italic font-bold md:text-2xl">
               GREAT DESIGN ISN'T JUST ABOUT MAKING THINGS LOOK BEAUTIFUL{" "}
             </p>
-            <span className=" absolute  -top-12 md:-left-32 text-[210px] text-[#1B1EE4] font-bold leading-none">
+            <span className=" absolute  -top-12 md:-left-32 md:text-[210px] text-[#1B1EE4] font-bold leading-none">
               “{" "}
             </span>
-            <span className=" font-bold text-5xl  text-[#FFFFFF]">
+            <span className=" font-bold md:text-5xl  text-[#FFFFFF]">
               IT'S ABOUT SOLVING REAL PROBLEMS FOR REAL PEOPLE. EVERY PIXEL,
               EVERY INTERACTION, EVERY DECISION SHOULD SERVE A PURPOSE AND
               CREATE VALUE.
             </span>
-            <span className=" absolute  md:-bottom-28 md:-right-32 text-[210px] text-[#1B1EE4] font-bold leading-none">
+            <span className=" absolute  md:-bottom-28 md:-right-32 md:text-[210px] text-[#1B1EE4] font-bold leading-none">
               ”{" "}
             </span>
           </div>
         </div>
         {/* Credentials */}
-        <div className="md:max-w-7xl md:pt-20 grid gap-5 mx-auto px-6">
-          <p className="text-[#F59E0B] font-bold italic">CREDENTIALS</p>
-          <div className="grid md:grid-flow-col justify-between">
+        <div className="md:max-w-7xl md:p-0 p-8 md:pt-20 grid gap-5 mx-auto md:px-6">
+          <p className="text-[#F59E0B] font-bold italic ">CREDENTIALS</p>
+          <div className="grid md:grid-flow-col p-5 md:p-0 justify-between">
             <p className="text-[#FFFFFF] md:text-5xl">Background</p>
             <button className="border border-[#F59E0B] grid grid-flow-col gap-4 text-xl items-center px-5 py-3 rounded-2xl text-[#F59E0B]">
               VIEW RESUME
               <PiDownloadBold />
             </button>
           </div>
-          <div className="grid grid-cols-2 gap-5 ">
+          <div className="grid md:grid-cols-2 md:p-0 p-5 gap-5 ">
             <div className="bg-[#1B1EE433] p-5 rounded-2xl">
               <p className="text-[#FFFFFF] text-2xl">Experience</p>
               <div className="grid grid-flow-col w-max gap-1 items-center ">

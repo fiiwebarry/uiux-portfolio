@@ -3,6 +3,7 @@ import icon from "/src/assets/transform-image.png";
 import { useState } from "react";
 
 const Contact = () => {
+  const [error, setError] = useState();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -21,8 +22,20 @@ const Contact = () => {
   };
   const handleSubmitForm = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    if (!formData.fullName.trim()) {
-      alert("enter fullname ");
+    const Validation = {};
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (formData.fullName.trim() === "") {
+      Validation.fullName = "name is invalid";
+    }
+
+    if (formData.email.trim() === "") {
+      Validation.email = "email is required";
+    } else if (!emailRegex.test(formData.email)) {
+      Validation.email = "email is invalid";
+    }
+    setError(Validation);
+
+    if (Object.keys(Validation) === 0) {
     }
   };
 
@@ -65,6 +78,7 @@ const Contact = () => {
                   value={formData.fullName}
                   onChange={handleChange}
                 />
+                {error && <p className="text-[red]">{error.fullName}</p>}
               </div>
               <div className="grid grid-flow-row gap-2">
                 <label className="text-[#000000] text-xl">Email Address</label>
@@ -74,6 +88,7 @@ const Contact = () => {
                   aria-placeholder="Enter Name"
                   placeholder="Enter Email Address"
                 />
+                {error && <p className="text-[red]">{error.email}</p>}
               </div>
             </div>
             <div className="grid grid-flow-row  mt-4 gap-2">
