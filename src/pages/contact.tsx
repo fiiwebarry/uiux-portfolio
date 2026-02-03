@@ -2,14 +2,20 @@ import { PROJECT_BUDGET_SCHEMA } from "../utils/constants";
 import icon from "/src/assets/transform-image.png";
 import { useState } from "react";
 
+type ContactForm = {
+  fullName: string;
+  email: string;
+  message: string;
+};
+
 const Contact = () => {
   const [error, setError] = useState();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactForm>({
     fullName: "",
     email: "",
-    subject: "",
+    // subject: "",
     message: "",
-    project: "0",
+    // project: "0",
   });
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
