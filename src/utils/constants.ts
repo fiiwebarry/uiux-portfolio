@@ -50,3 +50,5 @@ export const EXPERIENCE_SCHEMA = [
     date: "August 2021 - May 2022",
   },
 ];
+
+export const CORE_SERVICES_SCHEMA=[{id:1},{id:2},{id:3},{id:4},]

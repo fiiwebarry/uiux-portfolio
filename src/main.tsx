@@ -10,6 +10,7 @@ import CaseStudy from "./pages/casestudies";
 import About from "./pages/about";
 import Home from "./pages/home";
 import HomeLayout from "./components/genericLayout/homelayout";
+import Services from "./pages/services";
 
 const router = createBrowserRouter([
   {
@@ -31,16 +32,21 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
         path: "/about",
         element: <About />,
       },
       {
+        path: "/services",
+        element: <Services />,
+      },
+      {
         path: "/casestudy",
         element: <CaseStudy />,
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

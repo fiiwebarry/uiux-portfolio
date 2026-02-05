@@ -32,7 +32,10 @@ const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
           <Link to="/about">
             <p>ABOUT ME</p>
           </Link>
-          <p>SERVICES</p>
+          <Link to="/services">
+            <p>SERVICES</p>
+          </Link>
+
           <Link to="/casestudy">
             <p>CASE STUDIES</p>
           </Link>
