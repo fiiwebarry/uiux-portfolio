@@ -1,5 +1,5 @@
 import CoreServices from "../components/services/core-services";
-import icon from "../assets/illustration.png";
+import icon from "/src/assets/illustration.png";
 
 const Services = () => {
   return (
