@@ -1,12 +1,6 @@
 
 import icon from "/src/assets/casestudy.png";
 
-type FooterLink = {
-  id: number;
-  slug: string;
-  href: string;
-};
-
 export const PRODUCT_SCHEMA=[
     { id:1, slug: 'UIUX DESIGN', image:icon,  header:"HEALTH CARE", content:"Creating a telemedicine platform: Enhancing UI for virtual consultations"},
     { id:2, slug: 'UIUX DESIGN', image:icon,  header:"E-COMMERCE", content:"Revamping the shopping experience: Responsive design for mobile-first e-commerce"},
