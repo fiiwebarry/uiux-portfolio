@@ -2,6 +2,10 @@ import CoreServices from "../components/services/core-services";
 import icon from "../assets/brainstorm.png";
 import Process from "../components/services/process";
 import Feedback from "../components/services/feedback";
+import Advantage from "../components/services/advantage";
+import Transform from "../components/reusable/transform";
+import Inspired from "../components/reusable/inspired";
+import Figures from "../components/services/figures";
 
 const Services = () => {
   return (
@@ -30,6 +34,10 @@ const Services = () => {
       <CoreServices />
       <Process />
       <Feedback />
+      <Advantage />
+      <Transform />
+      <Inspired />
+      <Figures />
     </section>
   );
 };

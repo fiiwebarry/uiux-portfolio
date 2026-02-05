@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
     setShowSideBar((prev) => !prev);
   };
   return (
-    <div className="flex min-h-screen  ">
+    <div className="flex min-h-screen ">
       {/* Sidebar */}
       {showSideBar && <Sidebar onToggleSideBar={toggleSideBar} />}
 
