@@ -1,18 +1,18 @@
-import icon from "/src/assets/navigator.png";
+import icon from "/src/assets/generic-logo.png";
 
 type NavbarProps = {
   onToggleSideBar: () => void;
   showSideBar: boolean;
 };
 
-const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
+const GenericNavbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
   return (
     <nav className="sticky p-7 top-0 z-50 hidden md:block -mt-2">
       <div className="grid grid-cols-2 mx-auto max-w-7xl justify-between items-center">
         <div className="justify-self-start">
           {" "}
           {!showSideBar && (
-            <button onClick={onToggleSideBar}>
+            <button className="cursor-pointer" onClick={onToggleSideBar}>
               <img src={icon} alt="img" />
             </button>
           )}
@@ -27,4 +27,4 @@ const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
   );
 };
 
-export default Navbar;
+export default GenericNavbar;

@@ -1,6 +1,6 @@
 import Inspired from "../reusable/inspired";
 import Footer from "./footer";
-import Navbar from "./navbar";
+import GenericNavbar from "./genericNavbar";
 import Sidebar from "./sideBar";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
@@ -21,7 +21,10 @@ const HomeLayout = () => {
       <div className="flex flex-1 flex-col">
         {/* Section with navbar + hero background */}
         <section className="bg-[url('/image/hero-image.png')] bg-cover bg-center">
-          <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
+          <GenericNavbar
+            onToggleSideBar={toggleSideBar}
+            showSideBar={showSideBar}
+          />
 
           {/* This Outlet section will render any home page content that should share the background */}
           <div className="flex flex-col">
@@ -30,7 +33,7 @@ const HomeLayout = () => {
         </section>
 
         {/* Other sections of the page (not sharing the background) */}
-        <main className="flex-1 md:p-6">
+        <main className="flex-1 md:p-6 p-8">
           <Inspired />
         </main>
 

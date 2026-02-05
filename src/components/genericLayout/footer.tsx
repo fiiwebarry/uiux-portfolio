@@ -19,7 +19,7 @@ const footer = () => {
           Get <span className="font-semibold text-[#E3E4E6]">in Touch.</span>
         </p>
         <p className="text-[#E3E4E6]">So that we can talk more about...</p>
-        <div className="grid md:grid-flow-col md:gap-10 gap-2">
+        <div className="grid md:grid-flow-col md:gap-10 gap-4">
           <button className="bg-[#FFFFFF] hover:bg-[#FFB85A] hover:text-white px-8 cursor-pointer rounded-3xl py-3">
             Schedule a call
           </button>
@@ -28,7 +28,7 @@ const footer = () => {
           </button>
         </div>
         <hr className="text-[#3D3D3D] w-[70%]" />
-        <div className="grid grid-flow-col gap-4 md:text-xl text-sm text-[#FFFFFF]">
+        <div className="grid md:grid-flow-col gap-4 md:text-xl text-sm text-[#FFFFFF]">
           {FOOTER_SCHEMA.map((r, i) => {
             return (
               <Link key={i} to={r.href}>

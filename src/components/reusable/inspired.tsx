@@ -3,7 +3,7 @@ import { PRODUCT_SCHEMA } from "../../utils/constants";
 const Inspired = () => {
   return (
     <section>
-      <section className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center">
+      <section className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center md:p-0 p-3">
         <p className="  border border-[#EBF2FF] py-3 px-6 rounded-3xl bg-[#EBF2FF] text-[#1B1EE4]">
           {" "}
           More Hand-picked highlights
@@ -17,28 +17,28 @@ const Inspired = () => {
         </p>
       </section>
       {/* product */}
-      <div className="grid md:grid-cols-2 gap-9 md:max-w-7xl py-10  md:mx-auto">
+      <div className="grid md:grid-cols-2 md:gap-9 md:max-w-7xl py-10  md:mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
-            <div key={i} className="grid gap-5 ">
-              <span className="bg-[#F0F4F9] rounded-3xl">
+            <div key={i} className="grid md:gap-5 gap-2">
+              <span className="bg-[#F0F4F9] rounded-3xl ">
                 <img src={r.image} alt="icon" />
               </span>
               <div className="grid grid-flow-col items-center w-max gap-3">
-                <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
+                <p className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                   {r.slug}
                 </p>
-                <p className="text-[#FF6C63] border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
+                <p className="text-[#FF6C63] cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
                   {r.header}
                 </p>
               </div>
-              <p className="text-[#1F1F1F] mt-4 text-xl">{r.content}</p>
+              <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
             </div>
           );
         })}
       </div>
-      <div className="grid justify-items-center md:mt-4">
-        <button className="bg-[#1B1EE4] border text-white px-9 py-3 rounded-3xl border-[#1B1EE4]">
+      <div className="grid justify-items-center md:mt-6 md:mb-4">
+        <button className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] border text-white px-9 py-3 rounded-3xl border-[#1B1EE4]">
           {" "}
           SEE MORE CASE STUDIES
         </button>

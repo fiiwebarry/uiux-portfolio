@@ -1,12 +1,14 @@
 import { IoCloseOutline } from "react-icons/io5";
 import icon from "/src/assets/user.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { SIDEBAR_SCHEMA } from "../../utils/constants";
 
 type SideBarProps = {
   onToggleSideBar: () => void;
 };
 
 const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
+  const location = useLocation();
   return (
     <aside
       //   onClick={onToggleSideBar}
@@ -25,28 +27,24 @@ const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
           </div>
         </div>
         {}
-        <div className="grid gap-8 text-white pt-32">
-          <Link to="/">
-            <p>HOME</p>
-          </Link>
-          <Link to="/about">
-            <p>ABOUT ME</p>
-          </Link>
-          <Link to="/services">
-            <p>SERVICES</p>
-          </Link>
-          <Link to="/casestudy">
-            <p>CASE STUDIES</p>
-          </Link>
-          <Link to="/contact">
-            <p>CONTACT</p>
-          </Link>
+        <div className=" gap-4 text-white pt-32">
+          {SIDEBAR_SCHEMA.map((r, i) => {
+            const isActive = location.pathname === r.href;
+            return (
+              <Link
+                key={i}
+                to={r.href}
+                className="grid grid-flow-col w-max gap-1 items-center md:mb-10"
+              >
+                {isActive && (
+                  <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
+                )}
+                <p className="text-white text-xl">{r.slug}</p>
+              </Link>
+            );
+          })}
         </div>
       </div>
-
-      {/* <div className="fixed p-5">
-      
-      </div> */}
     </aside>
   );
 };
