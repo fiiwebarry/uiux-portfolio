@@ -3,7 +3,7 @@ import icon from "/src/assets/product-design.png";
 
 const CoreServices = () => {
   return (
-    <section className="py-20">
+    <section className=" md:max-w-7xl mx-auto  py-20">
       <div className="grid gap-3 justify-items-center">
         <h1 className="text-[#1F1F1F] font-bold md:text-6xl">
           My Core Services
