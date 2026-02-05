@@ -7,7 +7,7 @@ type NavbarProps = {
 
 const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
   return (
-    <nav className="p-7 hidden md:block -mt-2">
+    <nav className="sticky p-7 top-0 z-50 hidden md:block -mt-2">
       <div className="grid grid-cols-2 mx-auto max-w-7xl justify-between items-center">
         <div className="justify-self-start">
           {" "}
@@ -18,7 +18,7 @@ const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
           )}
         </div>
         <div className="justify-self-end">
-          <button className="bg-[#1B1EE4] w-62.25 text-white  text-xl px-4 py-3 rounded-3xl  cursor-pointer border border-[#1B1EE4]">
+          <button className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A]  hover:text-white w-62.25 text-white  text-xl px-4 py-3 rounded-3xl  cursor-pointer border border-[#1B1EE4]">
             LET'S HELP YOU BUILD
           </button>
         </div>

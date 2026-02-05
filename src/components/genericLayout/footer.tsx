@@ -2,6 +2,8 @@ import { FaBehance, FaDribbble } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import { TbMailFilled } from "react-icons/tb";
 import { TfiLinkedin } from "react-icons/tfi";
+import { FOOTER_SCHEMA } from "../../utils/constants";
+import { Link } from "react-router-dom";
 
 const footer = () => {
   return (
@@ -18,21 +20,22 @@ const footer = () => {
         </p>
         <p className="text-[#E3E4E6]">So that we can talk more about...</p>
         <div className="grid md:grid-flow-col md:gap-10 gap-2">
-          <button className="bg-[#FFFFFF] px-8 cursor-pointer rounded-3xl md:py-3">
+          <button className="bg-[#FFFFFF] hover:bg-[#FFB85A] hover:text-white px-8 cursor-pointer rounded-3xl py-3">
             Schedule a call
           </button>
-          <button className="bg-[#121514] text-white cursor-pointer  px-8 border border-[#FFFFFF] rounded-3xl py-3">
+          <button className="bg-[#121514] text-white cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D]  px-8 border border-[#FFFFFF] rounded-3xl py-3">
             Drop a message
           </button>
         </div>
         <hr className="text-[#3D3D3D] w-[70%]" />
-        <div className="grid md:grid-flow-col gap-4 text-[#FFFFFF]">
-          <p>HOME</p>
-          <p>ABOUT ME</p>
-          <p>SERVICES</p>
-          <p>CASE STUDIES</p>
-          <p>BLOGS</p>
-          <p>CONTACT</p>
+        <div className="grid grid-flow-col gap-4 md:text-xl text-sm text-[#FFFFFF]">
+          {FOOTER_SCHEMA.map((r, i) => {
+            return (
+              <Link key={i} to={r.href}>
+                {r.slug}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="grid grid-flow-col items-center gap-8 text-4xl text-[#E3E4E68C]">

@@ -35,15 +35,12 @@ const Sidebar = ({ onToggleSideBar }: SideBarProps) => {
           <Link to="/services">
             <p>SERVICES</p>
           </Link>
-
           <Link to="/casestudy">
             <p>CASE STUDIES</p>
           </Link>
           <Link to="/contact">
             <p>CONTACT</p>
           </Link>
-
-          <p>BLOG</p>
         </div>
       </div>
 

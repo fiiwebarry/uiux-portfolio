@@ -1,4 +1,11 @@
+
 import icon from "/src/assets/casestudy.png";
+
+type FooterLink = {
+  id: number;
+  slug: string;
+  href: string;
+};
 
 export const PRODUCT_SCHEMA=[
     { id:1, slug: 'UIUX DESIGN', image:icon,  header:"HEALTH CARE", content:"Creating a telemedicine platform: Enhancing UI for virtual consultations"},
@@ -51,4 +58,14 @@ export const EXPERIENCE_SCHEMA = [
   },
 ];
 
-export const CORE_SERVICES_SCHEMA=[{id:1},{id:2},{id:3},{id:4},]
+export const CORE_SERVICES_SCHEMA=[{id:1},{id:2},{id:3},{id:4},];
+
+// footer schema
+export const FOOTER_SCHEMA=[
+  { id:1, slug:'HOME', href:""}, 
+  { id:2, slug:"ABOUT ME", href:"/about"}, 
+  { id:3, slug:"CASE STUDIES", href:""}, 
+  { id:4, slug:"CONTACT", href:"/contact"},   
+];
+  
+         
