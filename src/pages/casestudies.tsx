@@ -1,4 +1,3 @@
-import { FaArrowRightLong } from "react-icons/fa6";
 import { PRODUCT_SCHEMA, PROJECT_SCHEMA } from "../utils/constants";
 import Transform from "../components/reusable/transform";
 

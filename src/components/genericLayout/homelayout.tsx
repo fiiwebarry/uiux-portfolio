@@ -1,4 +1,3 @@
-import { PRODUCT_SCHEMA } from "../../utils/constants";
 import Inspired from "../reusable/inspired";
 import Footer from "./footer";
 import Navbar from "./navbar";
