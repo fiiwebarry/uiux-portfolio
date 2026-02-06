@@ -3,16 +3,16 @@ import Transform from "../components/reusable/transform";
 
 const CaseStudy = () => {
   return (
-    <section className="p-5 md:p-0">
-      <div className=" md:max-w-7xl mx-auto">
+    <section className=" md:p-0">
+      <div className=" md:max-w-7xl mx-auto p-7">
         <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
           <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
-          <p className="text-[#1F1F1F] text-xl">Case Studies</p>
+          <p className="text-[#1F1F1F] md:text-xl">Case Studies</p>
         </div>
       </div>
 
       {/* hero section */}
-      <div className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center">
+      <div className="grid md:py-10 py-5 md:max-w-7xl md:mx-auto gap-5 justify-items-center">
         <p className="  border border-[#EBF2FF] py-3 px-6 rounded-3xl bg-[#EBF2FF] text-[#1B1EE4]">
           {" "}
           Hand-picked highlights
@@ -25,9 +25,8 @@ const CaseStudy = () => {
           to elevate your experience
         </p>
       </div>
-
       {/* product */}
-      <div className="grid md:grid-cols-2 gap-9 md:max-w-7xl py-10  md:mx-auto">
+      <div className="grid md:grid-cols-2 gap-9 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
             <div key={i} className="grid gap-5 ">
@@ -35,24 +34,23 @@ const CaseStudy = () => {
                 <img src={r.image} alt="icon" />
               </span>
               <div className="grid grid-flow-col items-center w-max gap-3">
-                <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
+                <p className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer   text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                   {r.slug}
                 </p>
-                <p className="text-[#FF6C63] border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
+                <p className="text-[#FF6C63] border border-[#FF6C63] cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white rounded-3xl py-3  px-5 md:px-7">
                   {r.header}
                 </p>
               </div>
-              <p className="text-[#1F1F1F] mt-4 text-xl">{r.content}</p>
+              <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
             </div>
           );
         })}
       </div>
-
       {/* ready to transform */}
       <Transform />
 
       {/* PROJECT */}
-      <div className="grid md:grid-cols-2 gap-9 md:max-w-7xl py-10  md:mx-auto">
+      <div className="grid md:grid-cols-2 md:mt-10 mt-4 gap-9 md:p-0 p-5 md:max-w-7xl py-10  md:mx-auto">
         {PROJECT_SCHEMA.map((r, i) => {
           return (
             <div key={i} className="grid gap-5 ">
@@ -60,14 +58,14 @@ const CaseStudy = () => {
                 <img src={r.image} alt="icon" />
               </span>
               <div className="grid grid-flow-col items-center w-max gap-3">
-                <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
+                <p className="bg-[#1B1EE4]  text-white  hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer  border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                   {r.slug}
                 </p>
-                <p className="text-[#FF6C63] border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
+                <p className="text-[#FF6C63] cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
                   {r.header}
                 </p>
               </div>
-              <p className="text-[#1F1F1F] mt-4 text-xl">{r.content}</p>
+              <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
             </div>
           );
         })}
