@@ -50,7 +50,6 @@ const CaseStudy = () => {
         <Transform />
 
         {/* PROJECT */}
-
         <div className="grid md:grid-cols-2 md:mt-10 mt-4 md:gap-9 gap-4 md:p-0 mb-10 md:mb-20 p-5 md:max-w-7xl py-10  md:mx-auto">
           {PROJECT_SCHEMA.map((r, i) => {
             return (

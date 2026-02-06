@@ -74,4 +74,27 @@ export const FOOTER_SCHEMA=[
   { id:5, slug:"CONTACT", href:"/contact"},   
 ];
   
-         
+ export const EXPERTISE = [
+  "A/B Testing",
+  "Wireframing",
+  "Prototyping",
+  "User Journey Mapping",
+  "Cognitive Walkthrough",
+  "Interaction Design",
+  "Mood Boarding",
+  "Visual Design",
+  "Style Guide Creation",
+  "User Research",
+  "Design Systems",
+  "Competitive Analysis",
+  "Feedback Collection",
+  "Analytics Review",
+  "Feature Prioritization",
+   "Cognitive Walkthrough",
+  "Interaction Design",
+  "Usability Testing",
+  "Cognitive Walkthrough",
+  "Usability Testing",
+  "Cognitive Walkthrough",
+
+];
