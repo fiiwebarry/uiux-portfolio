@@ -1,5 +1,10 @@
 
 import icon from "/src/assets/casestudy.png";
+import product from "/src/assets/product-design.png";
+import design from "/src/assets/ux-research.png";
+import visual from "/src/assets/visual-design.png";
+import rapid from "/src/assets/rapid-prototyping.png";
+
 
 export const PRODUCT_SCHEMA=[
     { id:1, slug: 'UIUX DESIGN', image:icon,  header:"HEALTH CARE", content:"Creating a telemedicine platform: Enhancing UI for virtual consultations"},
@@ -51,8 +56,63 @@ export const EXPERIENCE_SCHEMA = [
     date: "August 2021 - May 2022",
   },
 ];
+ 
+//core services schema
+export const CORE_SERVICES_SCHEMA = [
+  {
+    id: 1,
+    image:product,
+    header: 'End-to-End Design',
+    slug: 'Product Design',
+    content:
+      'Transform your product vision into intuitive, user-centered interfaces. We craft seamless, engaging experiences that solve real problems and drive measurable results.',
+    percentage: '45%',
+    process: 'Improved Customer Conversion',
+    rate: '15+',
+    outcome: 'Products Successfully Launched',
+    bgColor: 'bg-blue-50', 
+  },
+  {
+    id: 2,
+    image:design,
+    header: 'User Experience Research',
+    slug: 'UX Research',
+    content:
+      'Gain deep insights into user behavior and preferences through comprehensive research methodologies. We ensure that user feedback shapes the design process.',
+    percentage: '30%',
+    process: 'Enhanced User Satisfaction',
+    rate: '200+',
+    outcome: 'User Interviews Conducted',
+    bgColor: 'bg-red-50', 
+  },
+  {
+    id: 3,
+    image:visual,
+    header: 'Branding & Identity',
+    slug: 'Visual Design',
+    content:
+      'Create a strong visual identity that resonates with your target audience. Our design philosophy aligns your brand message with visual aesthetics.',
+    percentage: '60%',
+    process: 'Stronger Brand Recognition',
+    rate: '75+',
+    outcome: 'Brand Identities Developed',
+    bgColor: 'bg-green-100', 
+  },
+  {
+    id: 4,
+    image:rapid,
+    header: 'Prototyping & Testing',
+    slug: 'Rapid Prototyping',
+    content:
+      'Iterate faster with our prototyping services, allowing for real-time testing and feedback. We refine ideas to perfection before full-scale development.',
+    percentage: '50%',
+    process: 'Reduced Development Time',
+    rate: '100+',
+    outcome: 'Prototypes Tested',
+    bgColor: 'bg-amber-50', 
+  },
+];
 
-export const CORE_SERVICES_SCHEMA=[{id:1},{id:2},{id:3},{id:4},];
 
 // sidebar schema
 export const SIDEBAR_SCHEMA=[
@@ -74,6 +134,7 @@ export const FOOTER_SCHEMA=[
   { id:5, slug:"CONTACT", href:"/contact"},   
 ];
   
+// expertise schema
  export const EXPERTISE = [
   "A/B Testing",
   "Wireframing",
