@@ -26,7 +26,7 @@ const CaseStudy = () => {
         </p>
       </div>
       {/* product */}
-      <div className="grid md:grid-cols-2 gap-9 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
+      <div className="grid md:grid-cols-2 md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
             <div key={i} className="grid gap-5 ">
@@ -34,7 +34,7 @@ const CaseStudy = () => {
                 <img src={r.image} alt="icon" />
               </span>
               <div className="grid grid-flow-col items-center w-max gap-3">
-                <p className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer   text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
+                <p className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                   {r.slug}
                 </p>
                 <p className="text-[#FF6C63] border border-[#FF6C63] cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white rounded-3xl py-3  px-5 md:px-7">
@@ -50,18 +50,19 @@ const CaseStudy = () => {
       <Transform />
 
       {/* PROJECT */}
-      <div className="grid md:grid-cols-2 md:mt-10 mt-4 gap-9 md:p-0 p-5 md:max-w-7xl py-10  md:mx-auto">
+
+      <div className="grid md:grid-cols-2 md:mt-10 mt-4 md:gap-9 gap-4 md:p-0 mb-10 md:mb-20  p-5 md:max-w-7xl py-10  mx-auto">
         {PROJECT_SCHEMA.map((r, i) => {
           return (
-            <div key={i} className="grid gap-5 ">
+            <div key={i} className="grid md:gap-5 ">
               <span className="bg-[#F0F4F9] rounded-3xl">
                 <img src={r.image} alt="icon" />
               </span>
               <div className="grid grid-flow-col items-center w-max gap-3">
-                <p className="bg-[#1B1EE4]  text-white  hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer  border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
+                <p className="bg-[#1B1EE4]  text-white  hover:bg-[#FFB85A] hover:border-[#FFB85A] cursor-pointer  border border-[#1B1EE4] rounded-3xl py-3 px-3 md:px-7">
                   {r.slug}
                 </p>
-                <p className="text-[#FF6C63] cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
+                <p className="text-[#FF6C63] cursor-pointer hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white border border-[#FF6C63] rounded-3xl py-3  px-3 md:px-7">
                   {r.header}
                 </p>
               </div>

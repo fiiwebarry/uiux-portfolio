@@ -23,7 +23,7 @@ const Home = () => {
         intuitive, high-converting experiences through research, UX strategy,
         and clean interface design.
       </p>
-      <div className="grid grid-flow-col gap-4 mt-6">
+      <div className="grid grid-flow-col gap-4  md:mb-10 mt-6">
         <button className="bg-[#1B1EE4] cursor-pointer border px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A]  text-white border-[#1B1EE4] rounded-3xl">
           HIRE ME
         </button>
