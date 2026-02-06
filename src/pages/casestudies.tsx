@@ -54,7 +54,7 @@ const CaseStudy = () => {
       <div className="grid md:grid-cols-2 md:mt-10 mt-4 md:gap-9 gap-4 md:p-0 mb-10 md:mb-20  p-5 md:max-w-7xl py-10  mx-auto">
         {PROJECT_SCHEMA.map((r, i) => {
           return (
-            <div key={i} className="grid md:gap-5 ">
+            <div key={i} className="grid md:gap-5 gap-3 ">
               <span className="bg-[#F0F4F9] rounded-3xl">
                 <img src={r.image} alt="icon" />
               </span>
