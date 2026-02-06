@@ -29,7 +29,7 @@ const CaseStudy = () => {
         <div className="grid md:grid-cols-2 md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
           {PRODUCT_SCHEMA.map((r, i) => {
             return (
-              <div key={i} className="grid gap-5 ">
+              <div key={i} className="grid md:gap-5 gap-3 ">
                 <span className="bg-[#F0F4F9] rounded-3xl">
                   <img className=" md:px-0 px-7" src={r.image} alt="icon" />
                 </span>
