@@ -1,6 +1,6 @@
 const Figures = () => {
   return (
-    <section className=" md:-mx-6 md:-mb-28 md:mt-14 bg-[linear-gradient(180deg,#010208_16.39%,#010206_20.51%,#040008_24.79%,#010101_30.46%,#010101_34.11%,#010101_36.21%,#010101_100%)] py-40  p-7">
+    <section className=" bg-[url('/image/story.png')]  bg-cover bg-center md:-mx-6 md:-mb-7 md:mt-14    py-40  p-7">
       <div className="md:max-w-7xl grid grid-flow-col gap-3 mx-auto">
         <div className="grid gap-2">
           <p className="text-[#FFFFFF] md:text-6xl md:w-5/12">
@@ -16,22 +16,42 @@ const Figures = () => {
             designs
           </p>
         </div>
-        <div className="shadow-3xl bg-[#000000B2] border border-[#000000B2] rounded-2xl grid grid-cols-2 text-white">
-          <div>
-            <p>40+</p>
-            <p>Designs delivered from MVPs to full product redesigns</p>
-          </div>
-          <div>
-            <p>40+</p>
-            <p>Designs delivered from MVPs to full product redesigns</p>
-          </div>
-          <div>
-            <p>40+</p>
-            <p>Designs delivered from MVPs to full product redesigns</p>
-          </div>
-          <div>
-            <p>40+</p>
-            <p>Designs delivered from MVPs to full product redesigns</p>
+        <div className="relative shadow-3xl p-5 bg-[#000000B2] border border-[#000000B2] rounded-2xl text-white">
+          {/* Vertical divider */}
+          <span className="absolute top-10 bottom-10 left-1/2 w-px bg-[#7F60F9]" />
+
+          {/* Horizontal divider */}
+          <span className="absolute left-10 right-10 top-1/2 h-px bg-[linear-gradient(98.24deg,#6DDCFF_0%,#7F60F9_100%)]" />
+
+          <div className="grid grid-cols-2">
+            <div className="p-7">
+              <p className="text-3xl font-bold">40+</p>
+              <p>Designs delivered from MVPs to full product redesigns</p>
+            </div>
+
+            <div className="p-7">
+              <p className="text-3xl font-bold">15+</p>
+              <p>
+                Founders and teams supported through product discovery and
+                launch
+              </p>
+            </div>
+
+            <div className="p-7">
+              <p className="text-3xl font-bold">6+</p>
+              <p>
+                Core product phases covered: research, strategy, UX, UI,
+                testing, and handoff
+              </p>
+            </div>
+
+            <div className="p-7">
+              <p className="text-3xl font-bold">95% </p>
+              <p>
+                Projects delivered on time and aligned with initial product
+                goals
+              </p>
+            </div>
           </div>
         </div>
       </div>

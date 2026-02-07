@@ -159,3 +159,39 @@ export const FOOTER_SCHEMA=[
   "Cognitive Walkthrough",
 
 ];
+
+// process schema 
+ export const PROCESS_SCHEMA = [
+  {
+    number: "01",
+    title: "Discovery",
+    description:
+      "Every successful product starts with context. In this phase, I focus on deeply understanding what we’re building, who we’re building it for, and why it matters. I work closely with stakeholders to uncover business goals, success metrics, and technical constraints. At the same time, I explore user needs, pain points, and behaviors through research and analysis. This ensures we’re not designing based on assumptions but on real insight.",
+  },
+  {
+    number: "02",
+    title: "Strategy",
+    description:
+      "With the right insights in place, we move from understanding to decision-making. This phase is about defining how the product should work and why.I translate research into actionable strategy, shaping the product vision, defining user personas, mapping journeys, and setting design principles that guide every design decision. This keeps the product focused, intentional, and aligned with both user needs and business goals.",
+  },
+  {
+    number: "03",
+    title: "Design",
+    description:
+      "With the right insights in place, we move from understanding to decision-making. This phase is about defining how the product should work and why.I translate research into actionable strategy, shaping the product vision, defining user personas, mapping journeys, and setting design principles that guide every design decision. This keeps the product focused, intentional, and aligned with both user needs and business goals.",
+  },
+  {
+    number: "04",
+    title: "Delivery",
+    description:
+      "A great design is only successful when it’s built correctly. In this final phase, I focus on smooth collaboration with developers and maintaining quality through implementation.I deliver well-documented designs, clear specifications, and reusable components to ensure nothing is lost in translation. I stay involved during development to answer questions, review builds, and make sure the final product matches the intended experience.",
+  },
+];
+
+// Advantage schema
+export const ADVANTAGE_SCHEMA=[
+
+  {id:1, slug:'Empathy', content:"I approach every project with empathy and intention. I start with the 'Why' before the 'What'." },
+  {id:2, slug:'The Goal', content:"Design should reduce friction, not add to it. Every screen and interaction has a reason to exist." },
+  {id:3, slug:'The Intersection', content:"Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks." },
+]

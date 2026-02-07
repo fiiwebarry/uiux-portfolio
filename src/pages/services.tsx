@@ -9,7 +9,7 @@ import Figures from "../components/services/figures";
 
 const Services = () => {
   return (
-    <section className=" md:p-0 p-5">
+    <section className="  md:p-0 p-5">
       <div className="md:max-w-7xl md:mb-20 mx-auto">
         <div className="  grid grid-flow-col w-max gap-1 items-center md:mb-10">
           <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>

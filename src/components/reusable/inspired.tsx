@@ -2,8 +2,8 @@ import { PRODUCT_SCHEMA } from "../../utils/constants";
 
 const Inspired = () => {
   return (
-    <section>
-      <section className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center md:p-0 p-3">
+    <section className="md:py-20 py-10">
+      <div className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center md:p-0 p-3">
         <p className="  border border-[#EBF2FF] py-3 px-6 rounded-3xl bg-[#EBF2FF] text-[#1B1EE4]">
           {" "}
           More Hand-picked highlights
@@ -15,7 +15,7 @@ const Inspired = () => {
           A selection of projects that demonstrate how user-centered design
           solved real problems and delivered measurable results.
         </p>
-      </section>
+      </div>
       {/* product */}
       <div className="grid md:grid-cols-2 md:gap-9 md:max-w-7xl py-10  md:mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
