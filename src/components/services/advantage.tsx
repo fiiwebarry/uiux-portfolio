@@ -18,7 +18,7 @@ const Advantage = () => {
         <span className="mt-6">
           <img src={content} alt="content" />
         </span>
-        <div className="grid md:max-w-7xl mt-5 mx-auto grid-cols-3 gap-3">
+        <div className="grid md:max-w-7xl mt-5 mx-auto md:grid-cols-3 gap-3">
           {ADVANTAGE_SCHEMA.map((r, i) => {
             return (
               <div key={i} className="grid justify-items-center">

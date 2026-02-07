@@ -12,7 +12,7 @@ const CoreServices = () => {
         </p>
       </div>
 
-      <div className="grid gap-5 mt-9 md:p-0 p-5 ">
+      <div className="grid gap-5 mt-9 md:p-0  ">
         {CORE_SERVICES_SCHEMA.map((r, i) => {
           return (
             <div key={i} className={`md:p-2 p-4 rounded-3xl ${r.bgColor}`}>

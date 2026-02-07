@@ -4,7 +4,7 @@ import user3 from "/src/assets/client2.png";
 
 const Feedback = () => {
   return (
-    <section className="py-20">
+    <section className=" md:py-20 py-10">
       <div className="grid gap-3 justify-items-center">
         <p className="bg-[#EBF2FF] px-5 py-3 rounded-2xl grid justify-items-center ">
           WHAT CLIENTS SAY
@@ -16,7 +16,7 @@ const Feedback = () => {
           to elevate their brands. Their words reflect the impact of my work.
         </p>
       </div>
-      <div className=" md:max-w-7xl mx-auto grid grid-flow-col md:gap-10 mt-6">
+      <div className=" md:max-w-7xl mx-auto md:justify-normal justify-items-center grid md:grid-flow-col gap-4 md:gap-10 mt-6">
         <div className="grid gap-3">
           <img src={user} alt="user" />
           <img src={user2} alt="user" />
@@ -27,7 +27,7 @@ const Feedback = () => {
             Benny didn’t just design screens he helped us think clearly about
             our product.”
           </p>
-          <p className="mt-6 text-xl">
+          <p className="mt-6 md:text-xl">
             From the very first session, Benny focused on understanding our
             users, goals, and constraints before touching any UI. He challenged
             our assumptions in a constructive way and helped us simplify complex
@@ -36,7 +36,7 @@ const Feedback = () => {
             immediately noticed the improvement, and internal alignment became
             much easier.
           </p>
-          <div className="md:pt-52">
+          <div className="md:pt-52  pt-4">
             <p>Wisdom Okposin</p>
             <p>Startup Founder</p>
           </div>
