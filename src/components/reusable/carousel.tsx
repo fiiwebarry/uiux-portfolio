@@ -14,7 +14,7 @@ export default function Carousel({
   const slides = Children.toArray(children);
   const [curr, setCurr] = useState(0);
 
-  const prev = () => setCurr((c) => (c === 0 ? slides.length - 1 : c - 1));
+  //   const prev = () => setCurr((c) => (c === 0 ? slides.length - 1 : c - 1));
 
   const next = () => setCurr((c) => (c === slides.length - 1 ? 0 : c + 1));
 
