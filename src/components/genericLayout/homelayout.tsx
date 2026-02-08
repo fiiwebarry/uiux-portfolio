@@ -4,6 +4,7 @@ import GenericNavbar from "./genericNavbar";
 import Sidebar from "./sideBar";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 
 const HomeLayout = () => {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -19,6 +20,7 @@ const HomeLayout = () => {
 
       {/* Main content */}
       <div className="flex flex-1 flex-col">
+        <ScrollToTop />
         {/* Section with navbar + hero background */}
         <section className="bg-[url('/image/hero-image.png')] bg-cover bg-center">
           <GenericNavbar

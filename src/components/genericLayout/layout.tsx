@@ -1,5 +1,6 @@
 import Footer from "./footer";
 import Navbar from "./navbar";
+import ScrollToTop from "./scrollToTop";
 import Sidebar from "./sideBar";
 import type { ReactNode } from "react";
 import { useState } from "react";
@@ -20,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
 
       {/* Main content area */}
       <div className="flex flex-1 flex-col">
+        <ScrollToTop />
         {/* Navbar */}
         <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
 

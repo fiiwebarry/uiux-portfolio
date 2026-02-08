@@ -1,4 +1,4 @@
-import { PROJECT_BUDGET_SCHEMA } from "../utils/constants";
+// import { PROJECT_BUDGET_SCHEMA } from "../utils/constants";
 import icon from "/src/assets/transform-image.png";
 import { useState } from "react";
 
@@ -18,7 +18,7 @@ const Contact = () => {
     email: "",
     subject: "",
     message: "",
-    project: "0",
+    // project: "0",
   });
 
   const handleChange = (
@@ -139,7 +139,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="grid grid-flow-row gap-2">
+            {/* <div className="grid grid-flow-row gap-2">
               <label className="text-xl">Project Budget</label>
               <input
                 type="range"
@@ -150,7 +150,7 @@ const Contact = () => {
                 onChange={handleChange}
                 className="w-full"
               />
-            </div>
+            </div> */}
 
             <button
               type="submit"

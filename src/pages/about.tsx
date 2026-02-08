@@ -64,9 +64,9 @@ const About = () => {
               </div>
             )}
           </div>
-          <div className="rounded-full md:mb-0 mb-9">
-            <img src={user} className="rounded-full" alt="user" />
-          </div>
+          <span className="rounded-full bg-amber-900 object-cover md:mb-0 mb-9">
+            <img src={user} className="rounded-full object-cover" alt="user" />
+          </span>
         </div>
       </div>
       {/* how i think about a design */}
