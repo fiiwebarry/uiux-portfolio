@@ -19,7 +19,7 @@ const Services = () => {
 
       <div className=" md:max-w-7xl mx-auto grid md:grid-flow-col gap-4 md:justify-between ">
         <div className="">
-          <p className="text-[#F59E0B] font-bold md:text-5xl md:w-2/12 ">
+          <p className="text-[#F59E0B] font-bold md:text-7xl md:w-2/12 ">
             Craft. Launch. Scale.
           </p>
           <p className="text-[#1F2937] mt-4 md:text-xl md:w-8/12">
@@ -28,7 +28,7 @@ const Services = () => {
             your unique needs.
           </p>
         </div>
-        <span>
+        <span className="w-full">
           <img className="w-full " src={icon} alt="illustration" />
         </span>
       </div>

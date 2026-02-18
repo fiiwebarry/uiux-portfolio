@@ -30,17 +30,17 @@ const About = () => {
           <p className="text-[#1F1F1F] text-xl">About Me</p>
         </div>
         <div className="grid md:grid-flow-col mt-2 gap-7 md:py-10 md:mb-12">
-          <div className="grid gap-5">
+          <div className=" gap-2">
             <p className="italic text-[#1B1EE4] md:text-xl">
               LET'S START WITH A SMALL RIDDLE
             </p>
-            <h1 className="text-[#1F1F1F] md:text-6xl md:w-6/12">
+            <h1 className="text-[#1F1F1F] md:mt-4 md:text-6xl md:w-6/12">
               Why do users leave a product even when it looks good?
             </h1>
             {!showAnswer && (
               <div
                 onClick={ToggleAnswer}
-                className="grid grid-flow-col items-center cursor-pointer gap-3 w-max  text-[#F59E0B]"
+                className="grid grid-flow-col items-center cursor-pointer mt-4 gap-3 w-max  text-[#F59E0B]"
               >
                 <FaEye />
                 <p className="text-xl">Show Answer</p>
@@ -48,7 +48,7 @@ const About = () => {
             )}
 
             {showAnswer && (
-              <div className="grid gap-4">
+              <div className="grid mt-4 gap-4">
                 <p className="md:text-xl">
                   Because beauty without{" "}
                   <span className="text-[#1B1EE4]">clarity </span>is just
@@ -283,7 +283,7 @@ const About = () => {
               <PiDownloadBold />
             </button>
           </div>
-          <div className="grid md:grid-cols-2 md:p-0 p-2 gap-5 ">
+          <div className="grid md:grid-cols-2 md:p-0 p-2 gap-5 md:-mb-20 ">
             <div className="bg-[#1B1EE433] p-3 md:p-5 rounded-2xl">
               <p className="text-[#FFFFFF] md:text-2xl">Experience</p>
               <div className="grid grid-flow-col w-max gap-1 items-center ">

@@ -39,10 +39,20 @@ const footer = () => {
         </div>
 
         <div className="grid grid-flow-col items-center gap-8 text-4xl text-[#E3E4E68C]">
-          <TbMailFilled />
-          <FaBehance />
-          <FaDribbble />
-          <TfiLinkedin />
+          <Link to="/">
+            <TbMailFilled />
+          </Link>
+          <Link to="https://www.behance.net/bennyumoh">
+            <FaBehance />
+          </Link>
+          <Link to="/">
+            {" "}
+            <FaDribbble />
+          </Link>
+          <Link to="https://www.linkedin.com/in/bennyumoh ">
+            {" "}
+            <TfiLinkedin />
+          </Link>
         </div>
         <p className="text-[#FFFFFF]">Made with ❣️ by FIIWE BARRY</p>
       </div>

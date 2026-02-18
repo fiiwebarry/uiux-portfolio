@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  margin: 0;
+}
+
 :root {
   --font-gillsans: "Gill Sans", "Gill Sans MT", Helvetica, Arial, sans-serif;
   --font-plusjakarta: 'Plus Jakarta Sans', sans-serif;
