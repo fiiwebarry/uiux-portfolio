@@ -6,9 +6,12 @@
   --font-worksans: 'Work Sans', sans-serif;
 }
 
+
 body {
   font-family: var(--font-gillsans);
+  
 }
+
 
 @layer utilities {
   .font-gillsans {

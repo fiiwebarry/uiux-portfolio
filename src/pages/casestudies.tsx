@@ -1,5 +1,6 @@
 import { PRODUCT_SCHEMA, PROJECT_SCHEMA } from "../utils/constants";
 import Transform from "../components/reusable/transform";
+import { Link } from "react-router-dom";
 
 const CaseStudy = () => {
   return (
@@ -29,7 +30,7 @@ const CaseStudy = () => {
         <div className="grid md:grid-cols-2  md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
           {PRODUCT_SCHEMA.map((r, i) => {
             return (
-              <div key={i} className=" cursor-pointer ">
+              <Link key={i} to={r.href} className=" cursor-pointer ">
                 <span className="bg-[#F0F4F9] rounded-3xl">
                   <img className=" md:px-0 px-7" src={r.image} alt="icon" />
                 </span>
@@ -42,7 +43,7 @@ const CaseStudy = () => {
                   </p>
                 </div>
                 <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
-              </div>
+              </Link>
             );
           })}
         </div>

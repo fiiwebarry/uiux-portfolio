@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
       {showSideBar && <Sidebar onToggleSideBar={toggleSideBar} />}
 
       {/* Main content area */}
-      <div className="flex flex-1 flex-col">
+      <div className="flex  flex-1 flex-col">
         <ScrollToTop />
         {/* Navbar */}
         <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />

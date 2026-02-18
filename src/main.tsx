@@ -11,6 +11,7 @@ import About from "./pages/about";
 import Home from "./pages/home";
 import HomeLayout from "./components/genericLayout/homelayout";
 import Services from "./pages/services";
+import DigitalCase from "./pages/digitalCase";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/casestudy",
         element: <CaseStudy />,
+      },
+      {
+        path: "/digitalcase",
+        element: <DigitalCase />,
       },
 
       {

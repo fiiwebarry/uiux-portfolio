@@ -116,18 +116,16 @@ const Contact = () => {
 
             <div className="grid grid-flow-row gap-2">
               <label className="text-xl">Subject / Project Type</label>
-              <select
-                name="subject"
-                value={formData.subject}
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
+                placeholder="Tell me about your project"
                 className="border border-[#D1D5DB] p-3 rounded-2xl"
-              >
-                <option value="">Tell me about your project</option>
-                <option value="Option 1">Option 1</option>
-                <option value="Option 2">Option 2</option>
-              </select>
+              />
+              {error.email && <p className="text-red-500">{error.email}</p>}
             </div>
-
             <div className="grid grid-flow-row gap-2">
               <label className="text-xl">Message</label>
               <textarea
@@ -154,7 +152,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-[#1B1EE4] mt-4 rounded-3xl px-6 py-3 w-full text-white"
+              className="bg-[#1B1EE4] cursor-pointer mt-4 rounded-3xl px-6 py-3 w-full text-white"
             >
               SEND MESSAGE
             </button>

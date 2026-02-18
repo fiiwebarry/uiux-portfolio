@@ -139,11 +139,11 @@ const About = () => {
       </div>
       {/* product design */}
       <div className=" md:max-w-7xl md:pt-20 md:p-0 p-5 mx-auto grid md:grid-cols-2 gap-2  py-10 md:py-20">
-        <div>
+        <div className="md:sticky md:top-32 h-fit">
           <p className="text-[#6B7280] font-bold md:text-xl">1 /</p>
           <p className="text-[#1F1F1F] font-bold md:text-3xl">Product Design</p>
         </div>
-        <div className="md:border-l grid gap-5 text-[#1F2937] md:text-xl border-[#D1D5DB] md:pl-40">
+        <div className="md:border-l grid gap-5 text-[#1F2937] md:text-xl border-[#D1D5DB] md:pl-40 ">
           <p> Every product begins with a moment of uncertainty.</p>
           <p>
             Someone has an idea. A team has a goal. Users have needs they can’t
@@ -174,12 +174,12 @@ const About = () => {
         </div>
       </div>
       {/*UX Strategy*/}
-      <div className=" md:max-w-7xl md:pt-20 md:p-0 p-5 mx-auto grid gap-2 md:grid-cols-2 py-10">
-        <div>
+      <div className=" md:max-w-7xl md:pt-20 md:p-0 p-5 mx-auto grid gap-2 md:grid-cols-2 py-10 ">
+        <div className="md:sticky md:top-32 h-fit">
           <p className="text-[#6B7280] font-bold md:text-xl">2 /</p>
           <p className="text-[#1F1F1F] font-bold md:text-3xl">UX Strategy</p>
         </div>
-        <div className="md:border-l grid gap-5 text-[#1F2937] md:text-xl border-[#D1D5DB] md:pl-40">
+        <div className="md:border-l grid gap-5 text-[#1F2937] md:text-xl border-[#D1D5DB] md:pl-40 ">
           <p> Not every product needs a redesign.</p>
           <p>
             Some just need clarity. When a product already exists but isn’t
@@ -216,7 +216,7 @@ const About = () => {
       </div>
       {/*Design Systems*/}
       <div className=" md:max-w-7xl md:pt-20 md:p-0 p-5 mx-auto  gap-2 md:mb-20 grid md:grid-cols-2 py-10">
-        <div>
+        <div className="md:sticky md:top-32 h-fit">
           <p className="text-[#6B7280] font-bold md:text-xl">3/</p>
           <p className="text-[#1F1F1F] font-bold md:text-3xl">Design Systems</p>
         </div>
