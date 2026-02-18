@@ -1,5 +1,11 @@
+import Hero from "../components/casestudies/digitalCase/hero";
+
 const DigitalCase = () => {
-  return <div></div>;
+  return (
+    <section>
+      <Hero />
+    </section>
+  );
 };
 
 export default DigitalCase;
