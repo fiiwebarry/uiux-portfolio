@@ -22,7 +22,7 @@ const Feedback = () => {
           <img src={user2} alt="user" />
           <img src={user3} alt="user" />
         </div>
-        <div className="">
+        <div className="md:mt-9">
           <p className="text-[#1F1F1F] md:text-4xl">
             Benny didn’t just design screens he helped us think clearly about
             our product.”
@@ -36,7 +36,7 @@ const Feedback = () => {
             immediately noticed the improvement, and internal alignment became
             much easier.
           </p>
-          <div className="md:pt-52  pt-4">
+          <div className="md:pt-48  pt-4">
             <p>Wisdom Okposin</p>
             <p>Startup Founder</p>
           </div>

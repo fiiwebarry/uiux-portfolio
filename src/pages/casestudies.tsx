@@ -1,4 +1,8 @@
-import { PRODUCT_SCHEMA, PROJECT_SCHEMA } from "../utils/constants";
+import {
+  CASESTUDY_SCHEMA,
+  PRODUCT_SCHEMA,
+  PROJECT_SCHEMA,
+} from "../utils/constants";
 import Transform from "../components/reusable/transform";
 import { Link } from "react-router-dom";
 
@@ -28,16 +32,23 @@ const CaseStudy = () => {
         </div>
         {/* product */}
         <div className="grid md:grid-cols-2  md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
-          {PRODUCT_SCHEMA.map((r, i) => {
+          {CASESTUDY_SCHEMA.map((r, i) => {
             return (
-              <Link key={i} to={r.href} className=" cursor-pointer ">
-                <span className="bg-[#F0F4F9] rounded-3xl">
-                  <img
-                    className=" md:px-0 px-7 transition-transform duration-300 ease-in-out hover:scale-105"
-                    src={r.image}
-                    alt="icon"
-                  />
-                </span>
+              <Link
+                key={i}
+                to={r.href}
+                className="grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105  "
+              >
+                <div className="bg-[#F0F4F9] rounded-3xl ">
+                  <span className="grid justify-center md:p-0 p-3 mx-auto ">
+                    <img
+                      className="  transition-transform duration-300 ease-in-out hover:scale-105"
+                      src={r.image}
+                      alt="icon"
+                    />
+                  </span>
+                </div>
+
                 <div className="grid grid-flow-col mt-6 items-center w-max gap-3">
                   <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                     {r.slug}
@@ -55,26 +66,33 @@ const CaseStudy = () => {
         <Transform />
 
         {/* PROJECT */}
-        <div className="grid md:grid-cols-2 md:mt-10 mt-4 md:gap-9 gap-4 md:p-0 mb-10 md:mb-20 p-5 md:max-w-7xl py-10  md:mx-auto">
+        <div className="grid md:grid-cols-2 md:mt-8 mt-5  md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
           {PROJECT_SCHEMA.map((r, i) => {
             return (
-              <div key={i} className="cursor-pointer ">
-                <span className="bg-[#F0F4F9] rounded-3xl">
-                  <img
-                    className="md:px-0 px-7 transition-transform duration-300 ease-in-out hover:scale-105"
-                    src={r.image}
-                    alt="icon"
-                  />
-                </span>
+              <div
+                key={i}
+                className=" grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105 "
+              >
+                <div className="bg-[#F0F4F9] rounded-3xl">
+                  <span className="grid justify-center md:p-0 p-3 mx-auto mt-20 ">
+                    <img
+                      className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
+                      src={r.image}
+                      alt="icon"
+                    />
+                  </span>
+                </div>
                 <div className="grid grid-flow-col mt-6 items-center w-max gap-3">
-                  <p className="bg-[#1B1EE4]  text-white   border border-[#1B1EE4] rounded-3xl py-3 px-3 md:px-7">
+                  <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                     {r.slug}
                   </p>
-                  <p className="text-[#FF6C63]   border border-[#FF6C63] rounded-3xl py-3  px-3 md:px-7">
+                  <p className="text-[#FF6C63]   border border-[#FF6C63] rounded-3xl py-3  px-5 md:px-7">
                     {r.header}
                   </p>
                 </div>
-                <p className="text-[#1F1F1F] mt-7 md:text-xl">{r.content}</p>
+                <div className="h-20">
+                  <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
+                </div>
               </div>
             );
           })}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PRODUCT_SCHEMA } from "../../utils/constants";
 
 const Inspired = () => {
@@ -17,20 +18,23 @@ const Inspired = () => {
         </p>
       </div>
       {/* product */}
-      <div className="grid md:grid-cols-2 items-center md:gap-9 md:max-w-7xl py-10  md:mx-auto">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-7 mt-8 md:max-w-7xl md:mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
-            <div
+            <Link
               key={i}
-              className=" grid grid-flow-row  h-full items-center cursor-pointer "
+              to={r.href}
+              className=" grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105 "
             >
-              <span className=" bg-[#F0F4F9] inline-block p-14 rounded-3xl ">
-                <img
-                  className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
-                  src={r.image}
-                  alt="icon"
-                />
-              </span>
+              <div className="bg-[#F0F4F9] rounded-3xl">
+                <span className="grid justify-center md:p-0 p-3 mx-auto mt-20 ">
+                  <img
+                    className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
+                    src={r.image}
+                    alt="icon"
+                  />
+                </span>
+              </div>
               <div className="grid grid-flow-col mt-6 items-center w-max gap-3">
                 <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
                   {r.slug}
@@ -39,8 +43,10 @@ const Inspired = () => {
                   {r.header}
                 </p>
               </div>
-              <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
-            </div>
+              <div className="h-20">
+                <p className="text-[#1F1F1F] mt-4 md:text-xl">{r.content}</p>
+              </div>
+            </Link>
           );
         })}
       </div>

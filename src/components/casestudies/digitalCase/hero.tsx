@@ -5,8 +5,8 @@ import { PRODUCT_DETAILS_SCHEMA } from "../../../utils/constants";
 
 const Hero = () => {
   return (
-    <section className="">
-      <div className="bg-[#111827] md:py-20 py-10 md:-mx-6 -mx-5 p-7">
+    <section className="bg-[#111827]  py-20 md:-mx-6 -mx-5 p-7 md:-mt-4">
+      <div className="">
         <div className=" grid grid-flow-col justify-between items-center md:max-w-7xl mx-auto ">
           <Link
             to="/casestudy"
@@ -37,7 +37,7 @@ const Hero = () => {
             <img src={icon} alt="icon" />
           </div>
         </div>
-        <div className="grid grid-flow-col mx-auto">
+        <div className="grid grid-flow-col mt-9 mx-auto">
           {PRODUCT_DETAILS_SCHEMA.map((r, i) => {
             return (
               <div key={i} className="border-white text-center  border-r-2 ">
