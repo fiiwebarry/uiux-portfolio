@@ -17,13 +17,16 @@ const Inspired = () => {
         </p>
       </div>
       {/* product */}
-      <div className="grid md:grid-cols-2 md:gap-9 md:max-w-7xl py-10  md:mx-auto">
+      <div className="grid md:grid-cols-2 items-center md:gap-9 md:max-w-7xl py-10  md:mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
-            <div key={i} className="cursor-pointer ">
-              <span className="bg-[#F0F4F9] rounded-3xl ">
+            <div
+              key={i}
+              className=" grid grid-flow-row  h-full items-center cursor-pointer "
+            >
+              <span className=" bg-[#F0F4F9] inline-block p-14 rounded-3xl ">
                 <img
-                  className="transition-transform duration-300 ease-in-out hover:scale-105"
+                  className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
                   src={r.image}
                   alt="icon"
                 />
