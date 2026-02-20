@@ -24,7 +24,7 @@ const About = () => {
   };
   return (
     <section className=" md:mb-10 md:p-0 p-5">
-      <div className="md:max-w-7xl mx-auto md:py-10 ">
+      <div className="md:max-w-7xl mx-auto">
         <div className="grid grid-flow-col w-max gap-1 items-center md:mb-5">
           <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
           <p className="text-[#1F1F1F] text-xl">About Me</p>
@@ -139,7 +139,7 @@ const About = () => {
       </div>
       {/* product design */}
       <div className=" md:max-w-7xl md:pt-20 md:p-0 p-5 mx-auto grid md:grid-cols-2 gap-2  py-10 md:py-20">
-        <div className="md:sticky md:top-32 h-fit">
+        <div className="md:sticky md:top-32 md:self-start md:h-fit">
           <p className="text-[#6B7280] font-bold md:text-xl">1 /</p>
           <p className="text-[#1F1F1F] font-bold md:text-3xl">Product Design</p>
         </div>

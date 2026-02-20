@@ -4,10 +4,10 @@ const Home = () => {
   return (
     <div className="md:max-w-7xl mx-auto grid justify-items-center gap-6 md:p-5 p-8 py-20">
       <div className="border border-[#E5E7EB] px-8 gap-2 grid grid-flow-col items-center rounded-3xl py-3">
-        <span className="w-3 h-3 bg-[#24D64E] rounded-full"></span>
-        <p className="text-[#FFFFFF]">AVAILABLE FOR WORK</p>
+        <span className="w-3 h-3 bg-[#24D64E] rounded-full  animate-pulse"></span>
+        <p className="text-[#FFFFFF] font-semibold">AVAILABLE FOR WORK</p>
       </div>
-      <div className="grid justify-items-center md:relative">
+      {/* <div className="grid justify-items-center md:relative">
         <h1 className="md:text-7xl text-center md:w-10/12 font-bold md:leading-20  text-white">
           I design <span className=" text-[#F59E0B] font-bold">products </span>{" "}
           that deliver real impact
@@ -17,6 +17,20 @@ const Home = () => {
           src={icon}
           alt="curve"
         />
+      </div> */}
+      <div className="grid justify-items-center">
+        <h1 className="md:text-7xl text-center md:w-10/12 font-bold md:leading-20 text-white">
+          I design{" "}
+          <span className="relative inline-block text-[#F59E0B] font-bold">
+            products
+            <img
+              src={icon}
+              alt="curve"
+              className="absolute left-14 -bottom-6 w-52"
+            />
+          </span>{" "}
+          that deliver real impact
+        </h1>
       </div>
       <p className="md:text-xl text-[#FFFFFF] text-center md:w-8/12">
         I'm a Product (UI/UX) designer focused on turning complex ideas into

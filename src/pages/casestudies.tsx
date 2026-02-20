@@ -32,7 +32,11 @@ const CaseStudy = () => {
             return (
               <Link key={i} to={r.href} className=" cursor-pointer ">
                 <span className="bg-[#F0F4F9] rounded-3xl">
-                  <img className=" md:px-0 px-7" src={r.image} alt="icon" />
+                  <img
+                    className=" md:px-0 px-7 transition-transform duration-300 ease-in-out hover:scale-105"
+                    src={r.image}
+                    alt="icon"
+                  />
                 </span>
                 <div className="grid grid-flow-col mt-6 items-center w-max gap-3">
                   <p className="bg-[#1B1EE4]  text-white border border-[#1B1EE4] rounded-3xl py-3 px-5 md:px-7">
@@ -56,7 +60,11 @@ const CaseStudy = () => {
             return (
               <div key={i} className="cursor-pointer ">
                 <span className="bg-[#F0F4F9] rounded-3xl">
-                  <img className="md:px-0 px-7" src={r.image} alt="icon" />
+                  <img
+                    className="md:px-0 px-7 transition-transform duration-300 ease-in-out hover:scale-105"
+                    src={r.image}
+                    alt="icon"
+                  />
                 </span>
                 <div className="grid grid-flow-col mt-6 items-center w-max gap-3">
                   <p className="bg-[#1B1EE4]  text-white   border border-[#1B1EE4] rounded-3xl py-3 px-3 md:px-7">
