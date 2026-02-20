@@ -7,9 +7,7 @@ import { useState } from "react";
 
 type LayoutProps = {
   children: ReactNode;
-  navbarVariant?: "default" | "hero" | "transparent"; // Optional style type
 };
-
 const Layout = ({ children }: LayoutProps) => {
   const [showSideBar, setShowSideBar] = useState(false);
 
@@ -25,7 +23,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className="flex  flex-1 flex-col">
         <ScrollToTop />
         {/* Navbar */}
-        {/* <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} /> */}
+        <Navbar onToggleSideBar={toggleSideBar} showSideBar={showSideBar} />
 
         {/* Page content */}
         <main className="flex-1 md:p-6">{children}</main>
