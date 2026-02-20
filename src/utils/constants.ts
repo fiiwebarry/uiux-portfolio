@@ -4,6 +4,11 @@ import product from "/src/assets/product-design.png";
 import design from "/src/assets/ux-research.png";
 import visual from "/src/assets/visual-design.png";
 import rapid from "/src/assets/rapid-prototyping.png";
+import industry from "/src/assets/industry.png";
+import service from "/src/assets/service.png";
+import team from "/src/assets/team.png";
+import timeline from "/src/assets/timeline.png";
+import clientlab from "/src/assets/clientlab.png";
 
 type Product = {
   id: number;
@@ -203,4 +208,13 @@ export const ADVANTAGE_SCHEMA=[
   {id:1, slug:'Empathy', content:"I approach every project with empathy and intention. I start with the 'Why' before the 'What'." },
   {id:2, slug:'The Goal', content:"Design should reduce friction, not add to it. Every screen and interaction has a reason to exist." },
   {id:3, slug:'The Intersection', content:"Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks." },
+]
+
+// product-details schema
+export const PRODUCT_DETAILS_SCHEMA=[
+  {id:1, slug:'CLIENT',  image: clientlab,    content:"IncQuery Labs" },
+  {id:2, slug:'INDUSTRY',  image:industry,     content:"Healthcare" },
+  {id:3, slug:'SERVICE',   image:service,     content:"UIUX Design"},
+  {id:4, slug:'TEAM SETUP',  image:team,   content:"1 Researcher + 3 Designers + 2 Developers"},
+  {id:5, slug:'TIMELINE',   image:timeline,    content:"1 month"},
 ]
