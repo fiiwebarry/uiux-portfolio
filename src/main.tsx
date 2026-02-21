@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  // {
+  //   element: <HomeLayout />,
+  //   children: [],
+  // },
   {
     element: (
       <>
@@ -53,7 +57,6 @@ const router = createBrowserRouter([
         path: "/sigyncase",
         element: <SigynCase />,
       },
-
       {
         path: "/contact",
         element: <Contact />,
