@@ -1,6 +1,6 @@
 import {
   CASESTUDY_SCHEMA,
-  PRODUCT_SCHEMA,
+  // PRODUCT_SCHEMA,
   PROJECT_SCHEMA,
 } from "../utils/constants";
 import Transform from "../components/reusable/transform";

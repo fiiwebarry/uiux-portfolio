@@ -10,7 +10,7 @@ import team from "/src/assets/team.png";
 import timeline from "/src/assets/timeline.png";
 import clientlab from "/src/assets/clientlab.png";
 import frame from "/src/assets/frame.png";
-import digital from "/src/assets/digital.png";
+
 
 type Product = {
   id: number;
@@ -134,7 +134,15 @@ export const CORE_SERVICES_SCHEMA = [
     bgColor: 'bg-amber-50', 
   },
 ];
-
+//sync schema
+export const SIYNC_SCHEMA=[
+  { id:1, slug:'HOME', href:"/"}, 
+  { id:2, slug:"ABOUT ME", href:"/about"}, 
+  { id:3, slug:"SERVICES", href:"/services"}, 
+  { id:4, slug:"CASE STUDIES", href:"/casestudy"}, 
+  { id:5, slug:"CONTACT", href:"/contact"},   
+];
+  
 
 // sidebar schema
 export const SIDEBAR_SCHEMA=[
