@@ -1,6 +1,6 @@
 const Style = () => {
   return (
-    <section className="md:max-w-7xl mx-auto">
+    <section className="md:max-w-7xl mx-auto md:py-20">
       <div className="grid  grid-flow-col mt-10 justify-between">
         <div className="border-[#D1D5DB] border py-3 px-5 rounded-3xl">
           Style Guides
@@ -30,14 +30,14 @@ const Style = () => {
           <div className=" grid grid-flow-col gap-3">
             <div className="grid grid-rows-2 justify-between gap-40 bg-linear-to-b from-[#3C3C3C]  md:w-52 to-[#FFB000] rounded-3xl p-4 ">
               <div>
-                <p>Gradient</p>
+                <p className="text-[#FFFFFFCC]">Gradient</p>
               </div>
               <div>
-                <p>#FFB85A</p>
+                <p className="text-[#1A1A1AB2]">#3C3C3C</p>
                 <p>#FF642E</p>
               </div>
             </div>
-            <div className="grid grid-rows-2 justify-between gap-40 bg-[#FFB000] rounded-3xl p-2 md:w-52 ">
+            <div className="grid grid-rows-2 justify-between gap-40 bg-[#FFB000] rounded-3xl p-4 md:w-52 ">
               <div>
                 <p className="text-[#FFFFFFCC]">Vivid orange-yellow</p>
               </div>
@@ -47,29 +47,26 @@ const Style = () => {
             </div>
             <div className="grid grid-rows-2 justify-between gap-40 bg-[#0B0B0B]  md:w-52 rounded-3xl p-4 ">
               <div>
-                <p>Gradient</p>
+                <p className="text-[#D1D5DB]">Gradient</p>
               </div>
               <div>
-                <p>#FFB85A</p>
-                <p>#FF642E</p>
+                <p className="text-[#FFFFFF]">#0B0B0B</p>
               </div>
             </div>
             <div className="grid grid-rows-2 justify-between gap-40 bg-[#9A9186] to-[#FFB000]  md:w-52 rounded-3xl p-4 ">
               <div>
-                <p>Gradient</p>
+                <p>Warm gray</p>
               </div>
               <div>
-                <p>#FFB85A</p>
-                <p>#FF642E</p>
+                <p>#9A9186</p>
               </div>
             </div>
             <div className="grid grid-rows-2 justify-between gap-40 bg-[#F7F7F7] to-[#FFB000]  md:w-52 rounded-3xl p-4 ">
               <div>
-                <p>Gradient</p>
+                <p>Gray light</p>
               </div>
               <div>
-                <p>#FFB85A</p>
-                <p>#FF642E</p>
+                <p>#F7F7F7</p>
               </div>
             </div>
           </div>
