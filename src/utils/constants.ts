@@ -10,6 +10,7 @@ import team from "/src/assets/team.png";
 import timeline from "/src/assets/timeline.png";
 import clientlab from "/src/assets/clientlab.png";
 import frame from "/src/assets/frame.png";
+import sigyn from "/src/assets/sigyn-progs.png";
 
 
 type Product = {
@@ -18,8 +19,25 @@ type Product = {
   image: string;
   header: string;
   content: string;
-  href: string; // <-- add this
+  href: string; 
 };
+
+
+export const SIGYN_SCHEMA=[
+    { id:1, slug: 'E-COMMERCE DESIGN',  image:sigyn,},
+    { id:2, slug: 'MOBILE APP DESIGN',    image:sigyn,},
+    { id:3, slug: 'WEBSITE DESIGN',    image:sigyn,  },
+    { id:4, slug: 'BRANDING',    image:sigyn, },
+    { id:5, slug: 'UX RESEARCH',    image:sigyn,},
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+    { id:6, slug: 'WEB DESIGN',    image:sigyn, },
+]
 
 
 export const PRODUCT_SCHEMA: Product[]=[

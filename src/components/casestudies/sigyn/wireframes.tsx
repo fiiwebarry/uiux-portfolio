@@ -1,3 +1,20 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { SIGYN_SCHEMA } from "../../../utils/constants";
+
+import "/src/components/slider.css";
+import "/src/components/slide.css";
+
 const Wireframes = () => {
   return (
     <section className="bg-[#FBEECD] md:-mx-6 ">
@@ -10,12 +27,14 @@ const Wireframes = () => {
             <p className="mt-2 text-[#6B7280]">05</p>
           </div>
         </div>
-        <div className="grid grid-flow-col mt-10 justify-between">
-          <div>
-            <p>App Structure and Layout</p>
+        <div className="grid md:grid-cols-2 mt-4 items-center md:gap-64">
+          <div className="">
+            <p className="text-[#1A1A1A] md:text-6xl md:w-9/12">
+              App Structure and Layout
+            </p>
           </div>
           <div>
-            <p className="w-1/2">
+            <p className="">
               The app structure and layout of Sigyn are designed for simplicity
               and efficiency, ensuring users can navigate effortlessly even
               under stressful conditions. The main interface is organized into
@@ -23,6 +42,35 @@ const Wireframes = () => {
             </p>
           </div>
         </div>
+
+        <Swiper
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={"auto"}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ el: ".swiper-pagination", clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            // clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          className="unique"
+        >
+          {SIGYN_SCHEMA.map((r, i) => {
+            return (
+              <SwiperSlide key={i}>
+                <div className=" mt-20">
+                  <img src={r.image} alt="" />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
 
         <div className="justify-center mt-10">
           <p className="text-center text-[#1F1F1F] text-6xl">
