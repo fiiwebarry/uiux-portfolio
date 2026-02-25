@@ -2,10 +2,6 @@ import icon from "/src/assets/curve.png";
 import resume from "/src/assets/Benjamin.pdf";
 
 const Home = () => {
-  const handleWhatsappClick = () => {
-    window.location.href = "https://wa.me/2349125082119";
-  };
-
   return (
     <div className="md:max-w-7xl mx-auto grid justify-items-center gap-6 md:p-5 p-8 py-20">
       <div className="border border-[#E5E7EB] px-8 gap-2 grid grid-flow-col items-center rounded-3xl py-3">
@@ -32,16 +28,18 @@ const Home = () => {
         and clean interface design.
       </p>
       <div className="grid grid-flow-col gap-4  md:mb-10 mt-6">
-        <button
-          onClick={handleWhatsappClick}
-          className="bg-[#1B1EE4] cursor-pointer border px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A]  text-white border-[#1B1EE4] rounded-3xl"
+        <a
+          href="https://wa.me/2349125082119"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#1B1EE4] border px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A] text-white border-[#1B1EE4] rounded-3xl inline-block"
         >
           HIRE ME
-        </button>
+        </a>
         <button className="border cursor-pointer border-[#F8F8F8] px-5 py-3 hover:bg-[#3D3D3D] hover:border-[#3D3D3D]  text-white rounded-3xl">
           <a className="" href={resume} download=" ">
             {" "}
-            VIEW RESUME
+            DOWNLOAD RESUME
           </a>
         </button>
       </div>

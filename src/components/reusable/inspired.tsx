@@ -18,18 +18,18 @@ const Inspired = () => {
         </p>
       </div>
       {/* product */}
-      <div className="grid md:grid-cols-2 gap-6 md:gap-7 mt-8 md:max-w-7xl md:mx-auto">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-14 mt-8 md:max-w-7xl md:mx-auto">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
             <Link
               key={i}
               to={r.href}
-              className=" grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105 "
+              className=" grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
             >
               <div className="bg-[#F0F4F9] rounded-3xl">
                 <span className="grid justify-center md:p-0 p-3 mx-auto mt-20 ">
                   <img
-                    className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
+                    className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-95"
                     src={r.image}
                     alt="icon"
                   />

@@ -41,20 +41,37 @@ const footer = () => {
         </div>
 
         <div className="grid grid-flow-col md:mt-6 items-center md:gap-20 gap-10 text-4xl text-[#E3E4E68C]">
-          <Link to=" https://www.instagram.com/sir_benumoh/">
+          <a
+            href="https://www.instagram.com/sir_benumoh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram />
-          </Link>
-          <Link to="https://www.behance.net/bennyumoh">
+          </a>
+
+          <a
+            href="https://www.behance.net/bennyumoh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaBehance />
-          </Link>
-          <Link to="https://x.com/Sir_BenUmoh">
-            {" "}
+          </a>
+
+          <a
+            href="https://x.com/Sir_BenUmoh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsTwitterX className="w-7 h-7" />
-          </Link>
-          <Link to="https://www.linkedin.com/in/bennyumoh ">
-            {" "}
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/bennyumoh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <TfiLinkedin />
-          </Link>
+          </a>
         </div>
         <p className="text-[#FFFFFF] md:mt-6">Made with ❣️ by FIIWE BARRY</p>
       </div>

@@ -1,17 +1,69 @@
+import icon from "/src/assets/sigyn-progs1.png";
+import icon2 from "/src/assets/onboarding.png";
+import icon3 from "/src/assets/science.png";
+import icon4 from "/src/assets/beacon.png";
+import icon5 from "/src/assets/active.png";
 const Onboarding = () => {
   return (
     <section className="mx-auto md:max-w-7xl md:py-20">
-      <div className="grid md:grid-cols-2 md:gap-64">
-        <div>
-          <p className="text-3xl md:text-6xl md:w-1/2">Messaging Screens</p>
+      <div>
+        <div className="grid md:grid-cols-2 md:gap-64">
+          <div>
+            <p className="text-3xl md:text-6xl md:w-1/2">Onboarding Screens</p>
+          </div>
+          <div>
+            <p className="text-lg md:text-2xl text-[#6B7280] md:w-11/12">
+              The onboarding journey in Sigyn is designed to be intuitive and
+              reassuring, helping users quickly learn how to send and receive
+              messages even in low-connectivity environments.
+            </p>
+          </div>
         </div>
+        <div className="grid md:grid-flow-col mt-10 items-center w-max md:gap-50">
+          <div className="bg-[#FDEBD0] w-132 grid justify-center p-7 rounded-4xl">
+            <img className="md:w-60" src={icon} alt="icon" />
+          </div>
+          <div className="">
+            <img className="md:w-122" src={icon2} alt="icon" />
+          </div>
+        </div>
+      </div>
 
-        <div>
-          <p className="text-lg md:text-2xl text-[#6B7280] md:w-11/12">
-            The messaging screens in Sigyn are crafted to be clear and
-            efficient, ensuring users can quickly send, receive, and track
-            messages even in low-connectivity conditions.
+      <div className="pt-10">
+        <div className="grid md:grid-cols-2  md:gap-64">
+          <div>
+            <p className="text-3xl md:text-6xl md:w-1/2">Messaging Screens</p>
+          </div>
+
+          <div>
+            <p className="text-lg md:text-2xl text-[#6B7280] md:w-11/12">
+              The messaging screens in Sigyn are crafted to be clear and
+              efficient, ensuring users can quickly send, receive, and track
+              messages even in low-connectivity conditions.
+            </p>
+          </div>
+        </div>
+        <div className="grid md:grid-flow-col mt-9 items-center w-max md:gap-50">
+          <div className="bg-[#FDEBD0] w-132 grid justify-center p-7 rounded-4xl">
+            <img className="md:w-60" src={icon} alt="icon" />
+          </div>
+          <div className="">
+            <img className="md:w-122" src={icon3} alt="icon" />
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-3xl mt-20 bg-[#EBEBEB] md:py-20 p-9">
+        <div className=" grid justify-center">
+          <p className="text-center text-[#1F1F1F] md:text-5xl w-9/12 mx-auto">
+            Every decision centered on enabling critical information to move
+            reliably between survivors, even with unstable signals and minimal
+            electricity.
           </p>
+          <div className="grid md:grid-flow-col mt-6 justify-center gap-2">
+            <img src={icon4} alt="" />
+            <img src={icon5} alt="" />
+          </div>
         </div>
       </div>
     </section>
