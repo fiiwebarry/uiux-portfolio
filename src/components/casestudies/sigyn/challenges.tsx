@@ -104,10 +104,8 @@ const Challenges = () => {
         <div className="relative md:mt-0 mt-7 shadow-3xl md:p-5 p-3 bg-white border border-white rounded-2xl text-white">
           {/* Vertical divider */}
           <span className="absolute top-10 bottom-10 left-1/2 w-px bg-[#F3F4F6]" />
-
           {/* Horizontal divider */}
           <span className="absolute left-10 right-10 top-1/2 h-px bg-[#F3F4F6]" />
-
           <div className="grid grid-cols-2">
             {/* Goals */}
             <div className="md:p-3 p-4">
