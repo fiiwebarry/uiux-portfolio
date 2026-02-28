@@ -11,6 +11,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { SIGYN_SCHEMA } from "../../../utils/constants";
+import icon from "/src/assets/Body.png";
 
 import "/src/components/slider.css";
 import "/src/components/slide.css";
@@ -81,6 +82,9 @@ const Wireframes = () => {
           </p>
         </div>
       </div>
+      <span className=" grid justify-center mx-auto">
+        <img src={icon} alt="body" />
+      </span>
     </section>
   );
 };

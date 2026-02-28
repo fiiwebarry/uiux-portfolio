@@ -16,14 +16,19 @@ const OtherScreens = () => {
           </p>
         </div>
       </div>
-      <div className="bg-linear-to-b from-[#FFF6EB] to-[#FFFCF7] min-h-screen mt-9 p-7 rounded-3xl">
-        <div className="grid grid-cols-3 justify-center mx-auto w-max gap-20">
+      <div className="bg-linear-to-b from-[#FFF6EB] to-[#FFFCF7] min-h-screen mt-9  rounded-3xl">
+        <div className="grid grid-cols-3 p-7 justify-center mx-auto w-max gap-20">
           <img src={sigyn} alt="" />
           <img src={sigyn} alt="" />
           <img src={sigyn} alt="" />
           <img src={sigyn} alt="" />
           <img src={sigyn} alt="" />
           <img src={sigyn} alt="" />
+        </div>
+        <div className="bg-[#151515]/70 backdrop-blur-md py-20 rounded-b-3xl -mt-48">
+          <p className="font-bold text-8xl text-[#FFFFFF4D] grid justify-center">
+            +20 Screens
+          </p>
         </div>
       </div>
     </section>
