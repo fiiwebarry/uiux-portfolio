@@ -32,11 +32,11 @@ const Home = () => {
           href="https://wa.me/2349125082119"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#1B1EE4] border px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A] text-white border-[#1B1EE4] rounded-3xl inline-block"
+          className="bg-[#1B1EE4]  text-sm md:text-lg border  px-7 md:px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A] text-white border-[#1B1EE4] rounded-3xl inline-block"
         >
           HIRE ME
         </a>
-        <button className="border cursor-pointer border-[#F8F8F8] px-5 py-3 hover:bg-[#3D3D3D] hover:border-[#3D3D3D]  text-white rounded-3xl">
+        <button className="border cursor-pointer border-[#F8F8F8] px-5 py-3 hover:bg-[#3D3D3D] hover:border-[#3D3D3D] md:text-lg text-sm text-white rounded-3xl">
           <a className="" href={resume} download=" ">
             {" "}
             DOWNLOAD RESUME
