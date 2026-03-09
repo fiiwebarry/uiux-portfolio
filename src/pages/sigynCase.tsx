@@ -11,11 +11,11 @@ const SigynCase = () => {
     <section>
       <Hero />
       <Webflow />
-      {/* <Challenges /> */}
-      {/* <Style /> */}
-      {/* <Wireframes /> */}
-      {/* <Onboarding /> */}
-      {/* <OtherScreens />  */}
+      <Challenges />
+      <Style />
+      <Wireframes />
+      <Onboarding />
+      <OtherScreens />
     </section>
   );
 };
