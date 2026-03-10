@@ -16,13 +16,7 @@ import SigynCase from "./pages/sigynCase";
 
 const router = createBrowserRouter([
   {
-    element: (
-      <HomeLayout
-        heroBgClass="bg-[url('/image/hero-image.png')] bg-cover bg-center"
-        navbarBgClass="bg-transparent"
-        showInspired
-      />
-    ),
+    element: <HomeLayout />,
     children: [
       {
         path: "/",
@@ -31,13 +25,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    element: (
-      <HomeLayout
-        heroBgClass="bg-[#0F172A]"
-        navbarBgClass="bg-black/60"
-        showInspired={false}
-      />
-    ),
+    element: <HomeLayout />,
     children: [
       {
         path: "/digitalcase",
@@ -46,13 +34,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    element: (
-      <HomeLayout
-        heroBgClass="bg-[#111827]"
-        navbarBgClass="bg-black/60"
-        showInspired={false}
-      />
-    ),
+    element: <HomeLayout />,
     children: [
       {
         path: "/sigyncase",
@@ -81,6 +63,14 @@ const router = createBrowserRouter([
         path: "/casestudy",
         element: <CaseStudy />,
       },
+      // {
+      //   path: "/digitalcase",
+      //   element: <DigitalCase />,
+      // },
+      // {
+      //   path: "/sigyncase",
+      //   element: <SigynCase />,
+      // },
       {
         path: "/contact",
         element: <Contact />,

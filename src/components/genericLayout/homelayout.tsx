@@ -91,7 +91,7 @@ const HomeLayout = () => {
           </section>
         )}
         {isDigitalCase && (
-          <main className="">
+          <main className="flex-1 md:p-6 p-8 opacity-0">
             <Webflow />
             <Challenges />
             <Style />
