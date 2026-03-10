@@ -4,26 +4,26 @@ import {
   IoCloseCircleOutline,
 } from "react-icons/io5";
 import { SIYNC_SCHEMA } from "../../../utils/constants";
-
+` `;
 const Webflow = () => {
   return (
-    <section className=" md:max-w-7xl mx-auto md:py-20 py-10 md:p-0 p-4">
-      <div className="grid md:justify-items-center md:items-center md:p-0 ">
+    <section className=" md:max-w-7xl mx-auto md:py-20 py-10">
+      <div className="grid md:justify-items-center md:items-center mx-auto  ">
         <p className="text-[#1F1F1F] text-center p-3 md:text-6xl md:w-11/12">
           The goal was to design a low-power survival messaging system that
           enables reliable communication without internet or stable
           infrastructure.
         </p>
       </div>
-      <div className="grid grid-flow-col mt-10 justify-between">
-        <div className="border-[#D1D5DB] border py-3 px-5 rounded-3xl">
+      <div className="grid grid-flow-col mt-10 1 justify-between">
+        <div className="border-[#D1D5DB] border py-3 px-5  rounded-3xl">
           About the Project
         </div>
         <div className="border-[#D1D5DB] grid justify-center mx-auto border rounded-full  w-10 h-10">
           <p className="mt-2">01</p>
         </div>
       </div>
-      <div className="md:p-0 p-9 ">
+      <div className="">
         <div className="bg-[#F7F7F7] mt-6 rounded-3xl md:p-10">
           <div className="grid md:grid-cols-2 ">
             <div className="border grid text-[#DC2626] md:mx-0 mx-auto justify-items-center bg-[#FEF2F2] border-[#DC2626] rounded-3xl py-3 w-32">

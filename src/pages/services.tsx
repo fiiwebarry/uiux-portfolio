@@ -29,7 +29,7 @@ const Services = () => {
           </p>
         </div>
         <span className="w-full">
-          <img className="w-full " src={icon} alt="illustration" />
+          <img className="w-full" src={icon} alt="illustration" />
         </span>
       </div>
       <CoreServices />

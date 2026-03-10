@@ -3,11 +3,19 @@ import icon from "/src/assets/generic-logo.png";
 type NavbarProps = {
   onToggleSideBar: () => void;
   showSideBar: boolean;
+  /** Optional Tailwind classes to style the navbar background */
+  backgroundClass?: string;
 };
 
-const GenericNavbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
+const GenericNavbar = ({
+  onToggleSideBar,
+  showSideBar,
+  backgroundClass = "",
+}: NavbarProps) => {
   return (
-    <nav className="sticky p-7 top-0 z-50 hidden md:block -mt-2">
+    <nav
+      className={`sticky p-7 top-0 z-50 hidden md:block -mt-2 ${backgroundClass}`}
+    >
       <div className="grid grid-cols-2 mx-auto max-w-7xl justify-between items-center">
         <div className="justify-self-start">
           {" "}

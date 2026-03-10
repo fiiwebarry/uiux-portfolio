@@ -5,7 +5,7 @@ import icon4 from "/src/assets/beacon.png";
 import icon5 from "/src/assets/active.png";
 const Onboarding = () => {
   return (
-    <section className="mx-auto md:max-w-7xl md:py-20">
+    <section className=" grid mx-auto md:max-w-7xl md:py-20 md:p-7 p-4">
       <div>
         <div className="grid md:grid-cols-2 md:gap-64">
           <div>
@@ -28,7 +28,6 @@ const Onboarding = () => {
           </div>
         </div>
       </div>
-
       <div className="pt-10">
         <div className="grid md:grid-cols-2  md:gap-64">
           <div>
@@ -52,7 +51,6 @@ const Onboarding = () => {
           </div>
         </div>
       </div>
-
       <div className="rounded-3xl mt-20 bg-[#EBEBEB] md:py-20 p-9">
         <div className=" grid justify-center">
           <p className="text-center text-[#1F1F1F] md:text-5xl w-9/12 mx-auto">

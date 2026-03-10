@@ -4,8 +4,8 @@ import icon from "/src/assets/sygn.png";
 
 const Hero = () => {
   return (
-    <section className="bg-[#F8F8F8] md:-mx-6 md:p-0 p-4 ">
-      <div className=" grid grid-flow-col justify-between gap-3 items-center md:max-w-7xl mx-auto ">
+    <section className="bg-[#F8F8F8] md:-mx-6 md:p-7 p-4 ">
+      <div className=" grid grid-flow-col justify-between gap-3 p-6 items-center md:max-w-7xl mx-auto ">
         <Link
           to="/casestudy"
           className="text-[#1F1F1F] grid grid-flow-col w-max md:gap-5 gap-1 items-center"

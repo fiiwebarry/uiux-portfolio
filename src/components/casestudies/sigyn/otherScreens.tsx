@@ -2,7 +2,7 @@ import sigyn from "/src/assets/sigyn-progs.png";
 
 const OtherScreens = () => {
   return (
-    <section className="md:max-w-7xl mx-auto">
+    <section className="md:max-w-7xl mx-auto py-20 md:p-7 p-4 ">
       <div className="grid md:grid-cols-2 md:gap-64">
         <div>
           <p className="text-3xl md:text-6xl md:w-1/2">Other Screens</p>

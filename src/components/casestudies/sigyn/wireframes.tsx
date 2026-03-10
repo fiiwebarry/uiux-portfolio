@@ -12,14 +12,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { SIGYN_SCHEMA } from "../../../utils/constants";
 import icon from "/src/assets/Body.png";
-
 import "/src/components/slider.css";
 import "/src/components/slide.css";
 
 const Wireframes = () => {
   return (
-    <section className="bg-[#FBEECD] md:-mx-6 ">
-      <div className="md:max-w-7xl mx-auto md:py-10">
+    <section className="bg-[#FBEECD]   ">
+      <div className=" md:max-w-7xl mx-auto md:py-10">
         <div className="grid grid-flow-col mt-10 justify-between">
           <div className="border-[#D1D5DB] border py-3 px-5 text-[#6B7280] rounded-3xl">
             Wireframes
@@ -72,7 +71,6 @@ const Wireframes = () => {
             );
           })}
         </Swiper>
-
         <div className="justify-center mt-10">
           <p className="text-center text-[#1F1F1F] text-6xl">
             The focus was on resilient communication over convenience. Every
