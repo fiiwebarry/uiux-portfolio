@@ -51,10 +51,12 @@ const Projects = () => {
         })}
       </div>
       <div className="grid justify-items-center md:mt-6 md:mb-4">
-        <button className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] border text-white px-9 py-3 rounded-3xl border-[#1B1EE4]">
-          {" "}
+        <Link
+          to="/casestudies"
+          className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A] border text-white px-9 py-3 rounded-3xl border-[#1B1EE4]"
+        >
           SEE MORE CASE STUDIES
-        </button>
+        </Link>
       </div>
     </section>
   );

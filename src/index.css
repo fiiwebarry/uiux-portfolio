@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
   --font-gillsans: "Gill Sans", "Gill Sans MT", Helvetica, Arial, sans-serif;
   --font-plusjakarta: 'Plus Jakarta Sans', sans-serif;
   --font-worksans: 'Work Sans', sans-serif;
+  --font-playfair-display: 'Playfair Display', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 
@@ -11,7 +16,6 @@ body {
   font-family: var(--font-gillsans);
   
 }
-
 
 @layer utilities {
   .font-gillsans {
@@ -24,16 +28,12 @@ body {
   .font-worksans {
     font-family: var(--font-worksans);
   }
-}
 
- .font-gillsans {
-  font-family: var(--font-gillsans);
-}
+  .font-playfair {
+    font-family: var(--font-playfair-display);
+  }
 
-.font-plusjakarta {
-  font-family: var(--font-plusjakarta);
-}
-
-.font-worksans {
-  font-family: var(--font-worksans);
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
 }

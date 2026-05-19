@@ -40,6 +40,14 @@ export const SIGYN_SCHEMA=[
 ]
 
 
+
+export const LANDINGPAGE_PRODUCT_SCHEMA: Product[]=[
+    { id:1, slug: 'UIUX DESIGN', image:frame, href:"/sigyncase",   header:"HEALTH CARE", content:"SIGYN: Designing a decentralized survival messaging system for offline-first, crisis-ready communication"},
+    { id:2, slug: 'UIUX DESIGN', image:icon,  href:"/digitalcase", header:"E-COMMERCE", content:"Revamping the shopping experience: Responsive design for mobile-first e-commerce"},
+//     { id:3, slug: 'UIUX DESIGN', image:frame, href:"/digitalcase", header:"EDUCATION",  content:"Developing an interactive learning platform: User experience for gamified education"},
+//     { id:4, slug: 'UIUX DESIGN', image:frame, href:"/digitalcase", header:"TRAVEL",     content:"Innovating itinerary planning: Seamless UX for travel booking applications"},
+]
+
 export const PRODUCT_SCHEMA: Product[]=[
     { id:1, slug: 'UIUX DESIGN', image:frame, href:"/sigyncase",   header:"HEALTH CARE", content:"SIGYN: Designing a decentralized survival messaging system for offline-first, crisis-ready communication"},
     { id:2, slug: 'UIUX DESIGN', image:icon,  href:"/digitalcase", header:"E-COMMERCE", content:"Revamping the shopping experience: Responsive design for mobile-first e-commerce"},

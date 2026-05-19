@@ -26,7 +26,7 @@ const GenericNavbar = ({
           )}
         </div>
         <div className="justify-self-end">
-          <button className="bg-[#1B1EE4] hover:bg-[#FFB85A] hover:border-[#FFB85A]  hover:text-white w-62.25 text-white  text-xl px-4 py-2 rounded-3xl  cursor-pointer border border-[#1B1EE4]">
+          <button className="bg-[#1B1EE4] font-playfair hover:bg-[#FFB85A] hover:border-[#FFB85A]  hover:text-white  text-white  text-xl px-8 py-2 rounded-3xl  cursor-pointer border border-[#1B1EE4]">
             LET'S HELP YOU BUILD
           </button>
         </div>
