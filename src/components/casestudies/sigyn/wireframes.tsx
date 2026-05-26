@@ -64,15 +64,15 @@ const Wireframes = () => {
           {SIGYN_SCHEMA.map((r, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className=" mt-20">
+                <div className=" md:mt-20 mt-10">
                   <img src={r.image} alt="" />
                 </div>
               </SwiperSlide>
             );
           })}
         </Swiper>
-        <div className="justify-center mt-10">
-          <p className="text-center text-[#1F1F1F] text-6xl">
+        <div className="md:justify-center mt-10">
+          <p className="md:text-center text-[#1F1F1F] md:text-6xl">
             The focus was on resilient communication over convenience. Every
             decision centered on enabling critical information to move reliably
             between survivors, even with unstable signals and minimal

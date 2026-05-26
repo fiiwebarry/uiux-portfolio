@@ -8,8 +8,8 @@ import { SIYNC_SCHEMA } from "../../../utils/constants";
 const Webflow = () => {
   return (
     <section className=" md:max-w-7xl mx-auto md:py-20 py-10">
-      <div className="grid md:justify-items-center md:items-center mx-auto  ">
-        <p className="text-[#1F1F1F] text-center p-3 md:text-6xl md:w-11/12">
+      <div className="grid md:justify-items-center md:items-center md:mx-auto  ">
+        <p className="text-[#1F1F1F] text-center w-4/12 p-3 md:text-6xl md:w-11/12">
           The goal was to design a low-power survival messaging system that
           enables reliable communication without internet or stable
           infrastructure.
