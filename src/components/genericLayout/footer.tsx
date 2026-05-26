@@ -73,7 +73,7 @@ const footer = () => {
             <TfiLinkedin />
           </a>
         </div>
-        <p className="text-[#FFB85A] md:mt-6">Crafed by FIIWE BARRY</p>
+        <p className="text-[#FFB85A] md:mt-6">Crafted by FIIWE BARRY</p>
       </div>
     </section>
   );

@@ -34,7 +34,7 @@ const Home = () => {
           href="https://wa.me/2349125082119"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#1B1EE4] font-playfair  text-sm md:text-lg border  px-7 md:px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A] text-white border-[#1B1EE4] rounded-3xl inline-block"
+          className="bg-[#1B1EE4] font-playfair  text-sm md:text-lg border  px-5 md:px-10 py-3 hover:bg-[#FFB85A] hover:border-[#FFB85A] text-white border-[#1B1EE4] rounded-3xl inline-block"
         >
           HIRE ME
         </a>

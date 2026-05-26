@@ -1,3 +1,4 @@
+import { useState } from "react";
 import icon from "/src/assets/navigator.png";
 
 type NavbarProps = {
@@ -6,8 +7,10 @@ type NavbarProps = {
 };
 
 const Navbar = ({ onToggleSideBar, showSideBar }: NavbarProps) => {
+  const [showNav, setShowNav] = useState(false);
+
   return (
-    <nav className=" p-7 hidden md:block -mt-2">
+    <nav className=" p-7   md:-mt-2">
       <div className="grid grid-cols-2 mx-auto max-w-7xl justify-between items-center">
         <div className="justify-self-start">
           {" "}
