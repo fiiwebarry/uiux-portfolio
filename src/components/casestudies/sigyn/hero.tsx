@@ -4,7 +4,7 @@ import icon from "/src/assets/sygn.png";
 
 const Hero = () => {
   return (
-    <section className="bg-[#F8F8F8] md:-mx-6 md:p-7 p-4 ">
+    <section className="bg-[#F8F8F8] md:-mx-6 md:p-7 p-6 ">
       <div className=" grid md:grid-flow-col md:justify-between gap-3 md:p-6 items-center w-max md:w-full md:max-w-7xl md:mx-auto ">
         <Link
           to="/casestudy"
@@ -20,11 +20,11 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <p className="text-[#1F1F1F] grid md:justify-center w-3/12  md:w-9/12 mt-9 md:mx-auto md:text-7xl text-center">
+      <p className="text-[#1F1F1F] grid md:justify-center   md:w-9/12 mt-9 md:mx-auto md:text-7xl md:text-center">
         SIGYN: Designing a decentralized survival messaging system for
         offline-first, crisis-ready communication
       </p>
-      <p className="text-[#1F2937] grid md:justify-center mt-6 md:text-center w-4/12 md:w-7/12 md:mx-auto italic">
+      <p className="text-[#1F2937] grid md:justify-center mt-6 text-center  md:w-7/12 md:mx-auto italic">
         The system prioritizes essential communication over casual conversation,
         using compressed messages, peer-to-peer relays, and simple visual cues
         to ensure information can move between survivors safely and efficiently.

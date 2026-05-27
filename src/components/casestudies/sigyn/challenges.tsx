@@ -7,21 +7,21 @@ import challenges from "/src/assets/challenges.png";
 
 const Challenges = () => {
   return (
-    <section className="bg-[#F5F1E6] md:-mx-6 -mx-5 md:py-20 p-7">
-      <div className="grid grid-flow-col gap-8 md:max-w-7xl mx-auto items-center">
-        <div className="relative md:mt-0 mt-7 shadow-3xl md:p-5 p-3 bg-white border border-white rounded-2xl text-white">
+    <section className="bg-[#F5F1E6] md:-mx-6 -mx-5 md:py-20 py-10 p-7">
+      <div className="grid md:grid-flow-col gap-8 md:max-w-7xl mx-auto items-center">
+        <div className="relative md:mt-0 mt-7 shadow-3xl md:p-5 p-7 bg-white border border-white rounded-2xl text-white">
           {/* Vertical divider */}
-          <span className="absolute top-10 bottom-10 left-1/2 w-px bg-[#F3F4F6]" />
+          <span className="absolute md:block hidden top-10 bottom-10 left-1/2 w-px bg-[#F3F4F6]" />
           {/* Horizontal divider */}
-          <span className="absolute left-10 right-10 top-1/2 h-px bg-[#F3F4F6]" />
-          <div className="grid grid-cols-2">
+          <span className="absolute md:block hidden left-10 right-10 top-1/2 h-px bg-[#F3F4F6]" />
+          <div className="grid md:grid-cols-2">
             {/* Goals */}
-            <div className="md:p-4 p-4">
+            <div className="md:p-4 ">
               <div className="grid grid-flow-col w-max gap-2">
                 <img src={smiley} alt="smiley" />
-                <p className="text-[#333333] font-bold text-xl">Goals</p>
+                <p className="text-[#333333] font-bold md:text-xl">Goals</p>
               </div>
-              <p className="text-[#6B7280] mt-3">
+              <p className="text-[#6B7280] md:text-xl text-sm mt-3">
                 Survivors need a reliable way to communicate life-saving
                 information without internet access. The goal is to enable
                 clear, fast, and low-power messaging that supports coordination,
@@ -29,12 +29,14 @@ const Challenges = () => {
               </p>
             </div>
             {/* Challenges */}
-            <div className="md:p-4 p-4">
+            <div className="md:p-4 md:mt-0 mt-5 ">
               <div className="grid grid-flow-col w-max gap-2">
                 <img src={challenges} alt="challenge" />
-                <p className="text-[#333333] font-bold text-xl">Challenges</p>
+                <p className="text-[#333333] font-bold md:text-xl">
+                  Challenges
+                </p>
               </div>
-              <div className="grid gap-4 mt-5">
+              <div className="grid md:gap-4 gap-2 mt-3 md:mt-5 md:text-xl text-sm">
                 <div className="grid grid-flow-col w-max gap-2 items-center">
                   <p className="rounded-full bg-[#F08C00] w-2 h-2"></p>
                   <p className="text-[#6B7280]">
@@ -56,12 +58,12 @@ const Challenges = () => {
               </div>
             </div>
             {/* Motivations */}
-            <div className="md:p-7 p-4">
-              <div className="grid grid-flow-col w-max gap-2">
+            <div className="md:p-7  md:mt-0 mt-5">
+              <div className="grid grid-flow-col items-center w-max gap-2">
                 <img src={motivation} alt="smiley" />
                 <p className="text-[#333333] font-bold text-xl">Motivations</p>
               </div>
-              <div className="grid gap-4 mt-5">
+              <div className="grid md:gap-4 gap-2 mt-5">
                 <div className="grid grid-flow-col w-max gap-2 ">
                   <p className="rounded-full bg-[#F08C00] w-2 h-2 mt-2"></p>
                   <p className="text-[#6B7280] md:w-10/12">
@@ -79,12 +81,12 @@ const Challenges = () => {
               </div>
             </div>
             {/* Needs */}
-            <div className="md:p-7 p-4 ">
+            <div className="md:p-7 md:mt-0 mt-5">
               <div className="grid grid-flow-col w-max gap-2">
                 <img src={smiley} alt="smiley" />
-                <p className="text-[#333333] font-bold text-xl">Goals</p>
+                <p className="text-[#333333] font-bold md:text-xl">Goals</p>
               </div>
-              <p className="text-[#6B7280] mt-6">
+              <p className="text-[#6B7280] md:mt-6 mt-3">
                 An app that is simple, actionable messaging that works offline,
                 consumes minimal power, delivers reliably with delays, and uses
                 visual cues for quick understanding under pressure.
@@ -97,23 +99,23 @@ const Challenges = () => {
         </div>
       </div>
 
-      <div className="grid grid-flow-col mt-7 gap-8 md:max-w-7xl mx-auto">
+      <div className="grid md:grid-flow-col mt-7 gap-8 md:max-w-7xl mx-auto">
         <div>
           <img src={icon2} alt="icon" />
         </div>
-        <div className="relative md:mt-0 mt-7 shadow-3xl md:p-5 p-3 bg-white border border-white rounded-2xl text-white">
+        <div className="relative md:mt-0 mt-7 shadow-3xl md:p-5 p-6 bg-white border border-white rounded-2xl text-white">
           {/* Vertical divider */}
-          <span className="absolute top-10 bottom-10 left-1/2 w-px bg-[#F3F4F6]" />
+          <span className="absolute md:block hidden top-10 bottom-10 left-1/2 w-px bg-[#F3F4F6]" />
           {/* Horizontal divider */}
-          <span className="absolute left-10 right-10 top-1/2 h-px bg-[#F3F4F6]" />
-          <div className="grid grid-cols-2">
+          <span className="absolute md:block hidden left-10 right-10 top-1/2 h-px bg-[#F3F4F6]" />
+          <div className="grid md:grid-cols-2 text-sm md:text-xl">
             {/* Goals */}
-            <div className="md:p-3 p-4">
+            <div className="md:p-3 ">
               <div className="grid grid-flow-col w-max gap-2">
                 <img src={smiley} alt="smiley" />
-                <p className="text-[#333333] font-bold text-xl">Goals</p>
+                <p className="text-[#333333] font-bold md:text-xl">Goals</p>
               </div>
-              <p className="text-[#6B7280] mt-3">
+              <p className="text-[#6B7280] md:mt-6 mt-3">
                 To restore dependable communication in a world without digital
                 infrastructure. The system must allow survivors to exchange
                 urgent information quickly, using minimal energy, while
@@ -121,12 +123,14 @@ const Challenges = () => {
               </p>
             </div>
             {/* Challenges */}
-            <div className="md:p-4 p-4">
+            <div className="md:p-4">
               <div className="grid grid-flow-col w-max gap-2">
                 <img src={challenges} alt="challenge" />
-                <p className="text-[#333333] font-bold text-xl">Challenges</p>
+                <p className="text-[#333333] font-bold md:text-xl">
+                  Challenges
+                </p>
               </div>
-              <div className="grid gap-4 mt-5">
+              <div className="grid md:gap-4 gap-2  mt-5">
                 <div className="grid grid-flow-col w-max gap-2 items-center">
                   <p className="rounded-full bg-[#F08C00] w-2 h-2"></p>
                   <p className="text-[#6B7280]">
@@ -148,7 +152,7 @@ const Challenges = () => {
               </div>
             </div>
             {/* Motivations */}
-            <div className="md:p-3 mt-10 p-4">
+            <div className="md:p-3 mt-10">
               <div className="grid grid-flow-col mt-3 w-max gap-2">
                 <img src={motivation} alt="smiley" />
                 <p className="text-[#333333] font-bold text-xl">Motivations</p>
@@ -176,7 +180,7 @@ const Challenges = () => {
               </div>
             </div>
             {/* Needs */}
-            <div className="md:p-3 p-4  mt-12">
+            <div className="md:p-3 mt-12">
               <div className="grid grid-flow-col w-max gap-2">
                 <img src={needs} alt="smiley" />
                 <p className="text-[#333333] font-bold text-xl">Needs</p>

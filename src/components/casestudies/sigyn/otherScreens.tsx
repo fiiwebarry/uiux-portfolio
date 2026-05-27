@@ -8,7 +8,7 @@ const OtherScreens = () => {
           <p className="text-3xl md:text-6xl md:w-1/2">Other Screens</p>
         </div>
         <div>
-          <p className="text-lg md:text-2xl text-[#6B7280] w-7/12 md:w-11/12">
+          <p className="text-lg md:text-2xl text-[#6B7280]   md:w-11/12">
             The other screens in Sigyn are designed to support essential actions
             with clarity and minimal distraction, ensuring users can manage
             contacts, alerts, and settings quickly and confidently, even in

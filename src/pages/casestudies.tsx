@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const CaseStudy = () => {
   return (
-    <section className=" md:p-0">
-      <div className=" md:max-w-7xl mx-auto ">
+    <section className="">
+      <div className=" md:max-w-7xl md:px-0 px-6 mx-auto ">
         <div className="grid grid-flow-col w-max gap-1 items-center md:mb-10">
           <span className="h-1 w-4 rounded-full bg-linear-to-r from-[#1B1EE4] via-[#FF6C63] to-white"></span>
           <p className="text-[#1F1F1F] md:text-xl">Case Studies</p>
@@ -17,8 +17,8 @@ const CaseStudy = () => {
       </div>
       <div className="">
         {/* hero section */}
-        <div className="grid md:py-10 py-5 md:max-w-7xl md:mx-auto gap-5 justify-items-center">
-          <p className="  border border-[#EBF2FF] py-3 px-6 rounded-3xl bg-[#EBF2FF] text-[#1B1EE4]">
+        <div className="grid md:py-10 py-5 md:p-0 p-6 md:max-w-7xl md:px-0 px-6 md:mx-auto gap-5 justify-items-center">
+          <p className=" border border-[#EBF2FF] py-3 px-6 rounded-3xl bg-[#EBF2FF] text-[#1B1EE4]">
             {" "}
             Hand-picked highlights
           </p>
@@ -31,7 +31,7 @@ const CaseStudy = () => {
           </p>
         </div>
         {/* product */}
-        <div className="grid md:grid-cols-2  md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
+        <div className="grid md:grid-cols-2 md:gap-9  gap-4 md:max-w-7xl md:px-0 px-6 py-10 mb-10 md:mb-20 md:p-0 p-2 md:mx-auto">
           {CASESTUDY_SCHEMA.map((r, i) => {
             return (
               <Link
@@ -39,7 +39,7 @@ const CaseStudy = () => {
                 to={r.href}
                 className="grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105  "
               >
-                <div className="bg-[#F0F4F9] rounded-3xl ">
+                <div className="bg-[#F0F4F9] rounded-3xl md:p-0 p-4 ">
                   <span className="grid justify-center md:p-0 p-3 mx-auto ">
                     <img
                       className="  transition-transform duration-300 ease-in-out hover:scale-105"
@@ -66,7 +66,7 @@ const CaseStudy = () => {
         <Transform />
 
         {/* PROJECT */}
-        <div className="grid md:grid-cols-2 md:mt-8 mt-5  md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-5 md:mx-auto">
+        {/* <div className="grid md:grid-cols-2 md:mt-8 mt-5  md:gap-9 gap-4 md:max-w-7xl py-10 mb-10 md:mb-20 md:p-0 p-2 md:mx-auto">
           {PROJECT_SCHEMA.map((r, i) => {
             return (
               <div
@@ -74,7 +74,7 @@ const CaseStudy = () => {
                 className=" grid items-center cursor-pointer transition-transform  mx-auto duration-300 ease-in-out hover:scale-105 "
               >
                 <div className="bg-[#F0F4F9] rounded-3xl">
-                  <span className="grid justify-center md:p-0 p-3 mx-auto mt-20 ">
+                  <span className="grid justify-center md:p-0 p-2 mx-auto mt-20 ">
                     <img
                       className="  transition-transform  mx-auto duration-300 ease-in-out hover:scale-105"
                       src={r.image}
@@ -96,7 +96,7 @@ const CaseStudy = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );

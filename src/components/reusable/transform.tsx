@@ -2,8 +2,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Transform = () => {
   return (
-    <section className="bg-[#121454] md:-mx-6 -mx-5  py-20 ">
-      <div className="grid justify-items-center gap-7 p-3 md:p-0 md:py-10">
+    <section className="bg-[#121454] md:-mx-6 -mx-5 py-10 md:py-20  md:p-0 p-9 ">
+      <div className="grid justify-items-center gap-7 md:px-0 px-6 md:p-0 md:py-10">
         <div className="grid text-[#1B1EE4] grid-flow-col md:w-max gap-3 bg-[#EBF2FF] rounded-3xl items-center border border-[#EBF2FF]  px-3 md:px-5 py-3">
           <FaArrowRightLong className="hidden md:block" />
           <p className="md:justify-normal text-center">

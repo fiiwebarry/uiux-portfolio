@@ -68,7 +68,7 @@ const Contact = () => {
           <h1 className="text-[#1F1F1F] md:text-5xl md:w-119.5 ">
             Consult with a Product Design Expert
           </h1>
-          <p className="text-[#1F2937]  mt-4 text-2xl md:w-138.75">
+          <p className="text-[#1F2937]  mt-4 md:text-2xl md:w-138.75">
             Whether you’re building a new product, refining an existing
             experience, or stuck on a design decision, I offer thoughtful,
             user-centered consultation to help you move forward with confidence.
@@ -86,7 +86,7 @@ const Contact = () => {
           <form onSubmit={handleSubmitForm} className="grid gap-6 p-5">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="grid grid-flow-row gap-2">
-                <label className="text-xl">Full Name</label>
+                <label className="md:text-xl">Full Name</label>
                 <input
                   type="text"
                   name="fullName"
@@ -101,7 +101,7 @@ const Contact = () => {
               </div>
 
               <div className="grid grid-flow-row gap-2">
-                <label className="text-xl">Email Address</label>
+                <label className="md:text-xl">Email Address</label>
                 <input
                   type="email"
                   name="email"
@@ -115,7 +115,7 @@ const Contact = () => {
             </div>
 
             <div className="grid grid-flow-row gap-2">
-              <label className="text-xl">Subject / Project Type</label>
+              <label className="md:text-xl">Subject / Project Type</label>
               <input
                 type="email"
                 name="email"
@@ -127,7 +127,7 @@ const Contact = () => {
               {error.email && <p className="text-red-500">{error.email}</p>}
             </div>
             <div className="grid grid-flow-row gap-2">
-              <label className="text-xl">Message</label>
+              <label className="md:text-xl">Message</label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -162,22 +162,22 @@ const Contact = () => {
 
       <div className="bg-[#121454] mt-4 rounded-3xl">
         <div className="grid md:grid-cols-2">
-          <div className=" md:p-10">
-            <p className="font-bold text-4xl text-[#FFFFFF]">
+          <div className=" md:p-10 p-5">
+            <p className="font-bold md:text-4xl text-[#FFFFFF]">
               Ready to Transform Your Digital Experience?
             </p>
-            <p className="text-[#D1D5DB] text-2xl mt-8 ">
+            <p className="text-[#D1D5DB] md:text-2xl mt-8 ">
               Share your project details, what you’re building, who it’s for,
               and what you hope to achieve. Let’s bring your ideas to life!
             </p>
             <div className="mt-10 md:relative">
               <input
-                className="md:w-131 text-[#6B7280] p-4 rounded-3xl py-5 border border-[#F8F8F8]"
+                className="md:w-131 w-full text-[#6B7280] p-4 rounded-3xl py-5 border border-[#F8F8F8]"
                 type="text"
                 placeholder="ENTER EMAIL"
               />
 
-              <button className="bg-[#1B1EE4] md:absolute rounded-3xl py-3 px-6 md:right-14 top-2 text-white">
+              <button className="bg-[#1B1EE4] md:mt-0 mt-4 md:absolute rounded-3xl py-3 px-6 md:right-14 md:top-2 top-2 -right-4 md:w-40 w-full text-white">
                 SUBMIT
               </button>
             </div>

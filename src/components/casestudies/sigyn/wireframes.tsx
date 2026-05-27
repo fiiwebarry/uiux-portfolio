@@ -18,7 +18,7 @@ import "/src/components/slide.css";
 const Wireframes = () => {
   return (
     <section className="bg-[#FBEECD]   ">
-      <div className=" md:max-w-7xl mx-auto md:py-10">
+      <div className=" md:max-w-7xl mx-auto md:py-10 md:p-0 p-7">
         <div className="grid grid-flow-col mt-10 justify-between">
           <div className="border-[#D1D5DB] border py-3 px-5 text-[#6B7280] rounded-3xl">
             Wireframes

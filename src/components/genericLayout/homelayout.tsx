@@ -67,7 +67,7 @@ const HomeLayout = () => {
         )}
         {isSigynCase && (
           <main className="">
-            <Webflow />
+            {/* <Webflow /> */}
             <Challenges />
             <Style />
             <Wireframes />

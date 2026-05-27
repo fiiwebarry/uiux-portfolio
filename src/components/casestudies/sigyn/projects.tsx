@@ -4,7 +4,7 @@ import { PRODUCT_SCHEMA } from "../../../utils/constants";
 const Projects = () => {
   return (
     <section className="md:py-20 py-10">
-      <div className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center md:p-0 p-3">
+      <div className="grid py-10 md:max-w-7xl md:mx-auto gap-5 justify-items-center md:p-0 p-6">
         <p className="  border border-[#EBF2FF] py-3 px-6 rounded-3xl bg-[#EBF2FF] text-[#1B1EE4]">
           {" "}
           More Hand-picked highlights
@@ -18,7 +18,7 @@ const Projects = () => {
         </p>
       </div>
       {/* product */}
-      <div className="grid md:grid-cols-2 gap-6 md:gap-14 mt-8 md:max-w-7xl md:mx-auto">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-14 mt-8 md:max-w-7xl md:mx-auto md:p-0 p-6">
         {PRODUCT_SCHEMA.map((r, i) => {
           return (
             <Link
